@@ -1,0 +1,12 @@
+{
+  "name": "specweave-status",
+  "private": true,
+  "type": "module",
+  "description": "Public status page for SpecWeave and SpecWithCode at status.spec-weave.com",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "collect": "node scripts/collect.mjs",
+    "build": "node scripts/build.mjs",
+    "test": "node --test test/*.test.mjs"
+  }
+}

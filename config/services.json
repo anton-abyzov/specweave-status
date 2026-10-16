@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "groups": [
+    { "id": "specweave", "name": "SpecWeave", "description": "Website, docs and the npm package" },
+    { "id": "specwithcode", "name": "SpecWithCode", "description": "Desktop app downloads and updates" },
+    { "id": "dependencies", "name": "Dependencies", "description": "Services SpecWeave and SpecWithCode rely on" }
+  ],
+  "services": [
+    {
+      "id": "website",
+      "group": "specweave",
+      "name": "spec-weave.com",
+      "description": "The public website and documentation",
+      "dependsOn": ["github", "cloudflare"],
+      "usedBy": ["Docs and guides", "SpecWithCode download page", "This status page's links"],
+      "checks": [
+        { "id": "home", "name": "Home page", "kind": "http", "url": "https://spec-weave.com/", "expect": "SpecWeave" },
+        { "id": "docs", "name": "Documentation", "kind": "http", "url": "https://spec-weave.com/docs/overview/introduction/", "expect": "SpecWeave" },
+        { "id": "studio", "name": "SpecWithCode page", "kind": "http", "url": "https://spec-weave.com/code/", "expect": "SpecWithCode" }
+      ]
+    },
+    {
+      "id": "npm-package",
+      "group": "specweave",
+      "name": "npm package",
+      "description": "`npm install -g specweave` and `specweave update`",
+      "dependsOn": ["npm"],
+      "usedBy": ["Installing the specweave CLI", "specweave update", "CI pipelines that install specweave"],
+      "checks": [
+        { "id": "latest", "name": "Latest version published", "kind": "npm", "url": "https://registry.npmjs.org/specweave/latest" }
+      ]
+    },
+    {
+      "id": "plugin",
+      "group": "specweave",
+      "name": "Claude Code plugin",
+      "description": "The sw plugin marketplace on GitHub",
+      "dependsOn": ["github"],
+      "usedBy": ["/plugin install sw", "Plugin updates in Claude Code"],
+      "checks": [
+        { "id": "marketplace", "name": "Marketplace manifest", "kind": "json", "url": "https://raw.githubusercontent.com/anton-abyzov/specweave/develop/.claude-plugin/marketplace.json", "expectKey": "plugins" }
+      ]
+    },
+    {
+      "id": "downloads",
+      "group": "specwithcode",
+      "name": "Downloads",
+      "description": "The latest macOS installer from GitHub Releases",
+      "dependsOn": ["github"],
+      "usedBy": ["New installs", "The download button on spec-weave.com"],
+      "checks": [
+        { "id": "release", "name": "Latest release", "kind": "release", "url": "https://api.github.com/repos/anton-abyzov/specwithcode/releases/latest" },
+        { "id": "dmg", "name": "macOS installer (Apple silicon)", "kind": "download", "url": "https://github.com/anton-abyzov/specwithcode/releases/latest/download/SpecWithCode-arm64.dmg" }
+      ]
+    },
+    {
+      "id": "updates",
+      "group": "specwithcode",
+      "name": "Update feed",
+      "description": "What installed apps check for new versions",
+      "dependsOn": ["github"],
+      "usedBy": ["Automatic app updates", "Service updates on paired machines"],
+      "checks": [
+        { "id": "mac-feed", "name": "macOS update feed", "kind": "http", "url": "https://github.com/anton-abyzov/specwithcode/releases/latest/download/latest-mac.yml", "expect": "version:" },
+        { "id": "service-feed", "name": "Service update manifest", "kind": "json", "url": "https://github.com/anton-abyzov/specwithcode/releases/latest/download/studio-update.json" }
+      ]
+    },
+    {
+      "id": "github",
+      "group": "dependencies",
+      "name": "GitHub",
+      "description": "Pages hosting, releases and the plugin marketplace",
+      "usedBy": ["spec-weave.com (GitHub Pages)", "SpecWithCode downloads and updates", "Claude Code plugin", "This status page"],
+      "feed": { "kind": "statuspage", "url": "https://www.githubstatus.com/api/v2/summary.json", "page": "https://www.githubstatus.com", "components": ["Pages", "Git Operations", "API Requests", "Actions", "Packages"] }
+    },
+    {
+      "id": "cloudflare",
+      "group": "dependencies",
+      "name": "Cloudflare",
+      "description": "DNS and CDN in front of spec-weave.com",
+      "usedBy": ["spec-weave.com DNS and caching", "status.spec-weave.com DNS"],
+      "feed": { "kind": "statuspage", "url": "https://www.cloudflarestatus.com/api/v2/summary.json", "page": "https://www.cloudflarestatus.com", "components": ["CDN/Cache", "Authoritative DNS", "SSL Certificate Provisioning", "DNS Updates"], "ignoreUnlisted": true }
+    },
+    {
+      "id": "npm",
+      "group": "dependencies",
+      "name": "npm",
+      "description": "The registry the CLI is published to",
+      "usedBy": ["npm package installs and updates"],
+      "feed": { "kind": "statuspage", "url": "https://status.npmjs.org/api/v2/summary.json", "page": "https://status.npmjs.org", "components": ["Package installation", "Package publishing", "www.npmjs.com website"] }
+    },
+    {
+      "id": "claude",
+      "group": "dependencies",
+      "name": "Claude",
+      "description": "Anthropic's API and Claude Code",
+      "usedBy": ["SpecWeave in Claude Code", "SpecWithCode Claude threads"],
+      "feed": { "kind": "statuspage", "url": "https://status.claude.com/api/v2/summary.json", "page": "https://status.claude.com", "components": ["Claude API (api.anthropic.com)", "Claude Code", "claude.ai"] }
+    },
+    {
+      "id": "openai",
+      "group": "dependencies",
+      "name": "OpenAI",
+      "description": "Codex and the OpenAI API",
+      "usedBy": ["SpecWeave in Codex", "SpecWithCode Codex threads"],
+      "feed": { "kind": "statuspage", "url": "https://status.openai.com/api/v2/summary.json", "page": "https://status.openai.com", "components": ["Responses", "Codex in ChatGPT Desktop", "Login"], "ignoreUnlisted": true }
+    }
+  ]
+}
