@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-16T21:53:24.633Z",
+  "generatedAt": "2026-10-16T22:10:23.732Z",
   "level": "operational",
   "services": [
     {
@@ -13,22 +13,22 @@
           "id": "home",
           "name": "Home page",
           "level": "operational",
-          "detail": "Responding in 249 ms",
-          "ms": 249
+          "detail": "Responding in 211 ms",
+          "ms": 211
         },
         {
           "id": "docs",
           "name": "Documentation",
           "level": "operational",
-          "detail": "Responding in 202 ms",
-          "ms": 202
+          "detail": "Responding in 185 ms",
+          "ms": 185
         },
         {
           "id": "studio",
           "name": "SpecWithCode page",
           "level": "operational",
-          "detail": "Responding in 194 ms",
-          "ms": 194
+          "detail": "Responding in 144 ms",
+          "ms": 144
         }
       ]
     },
@@ -36,14 +36,14 @@
       "id": "npm-package",
       "name": "npm package",
       "level": "operational",
-      "detail": "specweave@3.0.22",
+      "detail": "specweave@3.0.23",
       "components": [
         {
           "id": "latest",
           "name": "Latest version published",
           "level": "operational",
-          "detail": "specweave@3.0.22",
-          "ms": 235
+          "detail": "specweave@3.0.23",
+          "ms": 313
         }
       ]
     },
@@ -51,14 +51,14 @@
       "id": "plugin",
       "name": "Claude Code plugin",
       "level": "operational",
-      "detail": "Version 3.0.22",
+      "detail": "Version 3.0.23",
       "components": [
         {
           "id": "marketplace",
           "name": "Marketplace manifest",
           "level": "operational",
-          "detail": "Version 3.0.22",
-          "ms": 217
+          "detail": "Version 3.0.23",
+          "ms": 128
         }
       ]
     },
@@ -73,14 +73,14 @@
           "name": "Latest release",
           "level": "operational",
           "detail": "v1.0.38, published October 16, 2026",
-          "ms": 285
+          "ms": 192
         },
         {
           "id": "dmg",
           "name": "macOS installer (Apple silicon)",
           "level": "operational",
           "detail": "Download available",
-          "ms": 364
+          "ms": 251
         }
       ]
     },
@@ -94,15 +94,15 @@
           "id": "mac-feed",
           "name": "macOS update feed",
           "level": "operational",
-          "detail": "Responding in 428 ms",
-          "ms": 428
+          "detail": "Responding in 289 ms",
+          "ms": 289
         },
         {
           "id": "service-feed",
           "name": "Service update manifest",
           "level": "operational",
           "detail": "Version 1.0.38",
-          "ms": 471
+          "ms": 273
         }
       ]
     },
