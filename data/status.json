@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-18T09:29:23.032Z",
+  "generatedAt": "2026-10-18T09:40:58.034Z",
   "level": "operational",
   "services": [
     {
@@ -13,22 +13,22 @@
           "id": "home",
           "name": "Home page",
           "level": "operational",
-          "detail": "Responding in 487 ms",
-          "ms": 487
+          "detail": "Responding in 243 ms",
+          "ms": 243
         },
         {
           "id": "docs",
           "name": "Documentation",
           "level": "operational",
-          "detail": "Responding in 337 ms",
-          "ms": 337
+          "detail": "Responding in 220 ms",
+          "ms": 220
         },
         {
           "id": "studio",
           "name": "SpecWithCode page",
           "level": "operational",
-          "detail": "Responding in 337 ms",
-          "ms": 337
+          "detail": "Responding in 231 ms",
+          "ms": 231
         }
       ]
     },
@@ -43,7 +43,7 @@
           "name": "Latest version published",
           "level": "operational",
           "detail": "specweave@3.1.0",
-          "ms": 370
+          "ms": 194
         }
       ]
     },
@@ -58,7 +58,7 @@
           "name": "Marketplace manifest",
           "level": "operational",
           "detail": "Version 3.1.0",
-          "ms": 330
+          "ms": 216
         }
       ]
     },
@@ -73,7 +73,7 @@
           "name": "Latest release",
           "level": "operational",
           "detail": "v1.0.46, published October 18, 2026",
-          "ms": 561
+          "ms": 374
         },
         {
           "id": "dmg",
@@ -94,15 +94,15 @@
           "id": "mac-feed",
           "name": "macOS update feed",
           "level": "operational",
-          "detail": "Responding in 526 ms",
-          "ms": 526
+          "detail": "Responding in 521 ms",
+          "ms": 521
         },
         {
           "id": "service-feed",
           "name": "Service update manifest",
           "level": "operational",
           "detail": "Version 1.0.46",
-          "ms": 1503
+          "ms": 629
         }
       ]
     },
