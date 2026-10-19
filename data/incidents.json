@@ -1,4 +1,17 @@
 {
   "schemaVersion": 1,
-  "incidents": []
+  "incidents": [
+    {
+      "id": "cloudflare:ce61s9m7vz48",
+      "serviceId": "cloudflare",
+      "title": "DNS Update Delays",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-10-19T11:28:15.911Z",
+      "updatedAt": "2026-10-19T11:29:26.317Z",
+      "resolvedAt": null,
+      "url": "https://www.cloudflarestatus.com/incidents/ce61s9m7vz48"
+    }
+  ]
 }
