@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-19T17:09:34.541Z",
-  "level": "operational",
+  "generatedAt": "2026-10-19T17:23:53.420Z",
+  "level": "major_outage",
   "services": [
     {
       "id": "website",
@@ -13,22 +13,22 @@
           "id": "home",
           "name": "Home page",
           "level": "operational",
-          "detail": "Responding in 663 ms",
-          "ms": 663
+          "detail": "Responding in 459 ms",
+          "ms": 459
         },
         {
           "id": "docs",
           "name": "Documentation",
           "level": "operational",
-          "detail": "Responding in 338 ms",
-          "ms": 338
+          "detail": "Responding in 267 ms",
+          "ms": 267
         },
         {
           "id": "studio",
           "name": "SpecWithCode page",
           "level": "operational",
-          "detail": "Responding in 608 ms",
-          "ms": 608
+          "detail": "Responding in 169 ms",
+          "ms": 169
         }
       ]
     },
@@ -43,7 +43,7 @@
           "name": "Latest version published",
           "level": "operational",
           "detail": "specweave@3.1.2",
-          "ms": 212
+          "ms": 206
         }
       ]
     },
@@ -58,7 +58,7 @@
           "name": "Marketplace manifest",
           "level": "operational",
           "detail": "Version 3.1.2",
-          "ms": 285
+          "ms": 125
         }
       ]
     },
@@ -73,36 +73,36 @@
           "name": "Latest release",
           "level": "operational",
           "detail": "v1.0.54, published October 19, 2026",
-          "ms": 359
+          "ms": 280
         },
         {
           "id": "dmg",
           "name": "macOS installer (Apple silicon)",
           "level": "operational",
           "detail": "Download available",
-          "ms": 543
+          "ms": 1584
         }
       ]
     },
     {
       "id": "updates",
       "name": "Update feed",
-      "level": "operational",
-      "detail": "All 2 checks passing",
+      "level": "major_outage",
+      "detail": "macOS update feed: HTTP 500",
       "components": [
         {
           "id": "mac-feed",
           "name": "macOS update feed",
-          "level": "operational",
-          "detail": "Responding in 544 ms",
-          "ms": 544
+          "level": "major_outage",
+          "detail": "HTTP 500",
+          "ms": 14018
         },
         {
           "id": "service-feed",
           "name": "Service update manifest",
           "level": "operational",
           "detail": "Version 1.0.54",
-          "ms": 671
+          "ms": 2447
         }
       ]
     },
