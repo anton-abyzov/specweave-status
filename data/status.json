@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-19T11:47:09.932Z",
-  "level": "degraded",
+  "generatedAt": "2026-10-19T11:56:11.556Z",
+  "level": "operational",
   "services": [
     {
       "id": "website",
@@ -13,22 +13,22 @@
           "id": "home",
           "name": "Home page",
           "level": "operational",
-          "detail": "Responding in 202 ms",
-          "ms": 202
+          "detail": "Responding in 299 ms",
+          "ms": 299
         },
         {
           "id": "docs",
           "name": "Documentation",
           "level": "operational",
-          "detail": "Responding in 147 ms",
-          "ms": 147
+          "detail": "Responding in 270 ms",
+          "ms": 270
         },
         {
           "id": "studio",
           "name": "SpecWithCode page",
           "level": "operational",
-          "detail": "Responding in 173 ms",
-          "ms": 173
+          "detail": "Responding in 230 ms",
+          "ms": 230
         }
       ]
     },
@@ -43,7 +43,7 @@
           "name": "Latest version published",
           "level": "operational",
           "detail": "specweave@3.1.2",
-          "ms": 246
+          "ms": 280
         }
       ]
     },
@@ -58,7 +58,7 @@
           "name": "Marketplace manifest",
           "level": "operational",
           "detail": "Version 3.1.2",
-          "ms": 119
+          "ms": 220
         }
       ]
     },
@@ -73,14 +73,14 @@
           "name": "Latest release",
           "level": "operational",
           "detail": "v1.0.53, published October 19, 2026",
-          "ms": 185
+          "ms": 375
         },
         {
           "id": "dmg",
           "name": "macOS installer (Apple silicon)",
           "level": "operational",
           "detail": "Download available",
-          "ms": 262
+          "ms": 590
         }
       ]
     },
@@ -94,15 +94,15 @@
           "id": "mac-feed",
           "name": "macOS update feed",
           "level": "operational",
-          "detail": "Responding in 275 ms",
-          "ms": 275
+          "detail": "Responding in 542 ms",
+          "ms": 542
         },
         {
           "id": "service-feed",
           "name": "Service update manifest",
           "level": "operational",
           "detail": "Version 1.0.53",
-          "ms": 290
+          "ms": 518
         }
       ]
     },
@@ -147,8 +147,8 @@
     {
       "id": "cloudflare",
       "name": "Cloudflare",
-      "level": "degraded",
-      "detail": "DNS Update Delays",
+      "level": "operational",
+      "detail": "All tracked components operational.",
       "components": [
         {
           "id": "authoritative-dns",
@@ -165,8 +165,8 @@
         {
           "id": "dns-updates",
           "name": "DNS Updates",
-          "level": "degraded",
-          "detail": "degraded performance"
+          "level": "operational",
+          "detail": null
         },
         {
           "id": "ssl-certificate-provisioning",
