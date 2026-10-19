@@ -18,11 +18,11 @@
       "serviceId": "github",
       "title": "Degraded availability for GitHub Actions, GitHub Pages and Webhooks",
       "level": "major_outage",
-      "stage": "investigating",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-10-19T15:49:25.822Z",
-      "updatedAt": "2026-10-19T16:30:29.646Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-10-19T17:09:34.541Z",
+      "resolvedAt": "2026-10-19T17:09:34.541Z",
       "url": "https://stspg.io/nrv2k8s68bwn"
     }
   ]
