@@ -12,6 +12,18 @@
       "updatedAt": "2026-10-19T11:56:11.556Z",
       "resolvedAt": "2026-10-19T11:56:11.556Z",
       "url": "https://www.cloudflarestatus.com/incidents/ce61s9m7vz48"
+    },
+    {
+      "id": "github:8tzbpcnl75jp",
+      "serviceId": "github",
+      "title": "Degraded availability for GitHub Actions, GitHub Pages and Webhooks",
+      "level": "major_outage",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-10-19T15:49:25.822Z",
+      "updatedAt": "2026-10-19T15:56:34.100Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/nrv2k8s68bwn"
     }
   ]
 }
