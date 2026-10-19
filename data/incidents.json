@@ -6,10 +6,10 @@
       "serviceId": "cloudflare",
       "title": "DNS Update Delays",
       "level": "degraded",
-      "stage": "investigating",
+      "stage": "monitoring",
       "origin": "upstream",
       "startedAt": "2026-10-19T11:28:15.911Z",
-      "updatedAt": "2026-10-19T11:29:26.317Z",
+      "updatedAt": "2026-10-19T11:39:17.237Z",
       "resolvedAt": null,
       "url": "https://www.cloudflarestatus.com/incidents/ce61s9m7vz48"
     }
