@@ -36,6 +36,18 @@
       "updatedAt": "2026-10-21T16:34:49.135Z",
       "resolvedAt": null,
       "url": "https://stspg.io/gnnt0tx9nxmk"
+    },
+    {
+      "id": "cloudflare:t77gwnpr6oe5",
+      "serviceId": "cloudflare",
+      "title": "Increased Latency in India",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-10-21T16:42:14.640Z",
+      "updatedAt": "2026-10-21T16:42:14.640Z",
+      "resolvedAt": null,
+      "url": "https://www.cloudflarestatus.com/incidents/t77gwnpr6oe5"
     }
   ]
 }
