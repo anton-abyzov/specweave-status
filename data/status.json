@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T19:46:28.649Z",
+  "generatedAt": "2026-10-21T19:54:08.884Z",
   "level": "degraded",
   "services": [
     {
@@ -13,22 +13,22 @@
           "id": "home",
           "name": "Home page",
           "level": "operational",
-          "detail": "Responding in 563 ms",
-          "ms": 563
+          "detail": "Responding in 224 ms",
+          "ms": 224
         },
         {
           "id": "docs",
           "name": "Documentation",
           "level": "operational",
-          "detail": "Responding in 413 ms",
-          "ms": 413
+          "detail": "Responding in 181 ms",
+          "ms": 181
         },
         {
           "id": "studio",
           "name": "SpecWithCode page",
           "level": "operational",
-          "detail": "Responding in 422 ms",
-          "ms": 422
+          "detail": "Responding in 213 ms",
+          "ms": 213
         }
       ]
     },
@@ -43,7 +43,7 @@
           "name": "Latest version published",
           "level": "operational",
           "detail": "specweave@3.1.5",
-          "ms": 224
+          "ms": 112
         }
       ]
     },
@@ -58,7 +58,7 @@
           "name": "Marketplace manifest",
           "level": "operational",
           "detail": "Version 3.1.5",
-          "ms": 156
+          "ms": 143
         }
       ]
     },
@@ -73,14 +73,14 @@
           "name": "Latest release",
           "level": "operational",
           "detail": "v1.0.66, published October 21, 2026",
-          "ms": 467
+          "ms": 272
         },
         {
           "id": "dmg",
           "name": "macOS installer (Apple silicon)",
           "level": "operational",
           "detail": "Download available",
-          "ms": 429
+          "ms": 255
         }
       ]
     },
@@ -94,15 +94,15 @@
           "id": "mac-feed",
           "name": "macOS update feed",
           "level": "operational",
-          "detail": "Responding in 351 ms",
-          "ms": 351
+          "detail": "Responding in 248 ms",
+          "ms": 248
         },
         {
           "id": "service-feed",
           "name": "Service update manifest",
           "level": "operational",
           "detail": "Version 1.0.66",
-          "ms": 368
+          "ms": 258
         }
       ]
     },
@@ -205,26 +205,26 @@
     {
       "id": "claude",
       "name": "Claude",
-      "level": "operational",
-      "detail": "All tracked components operational.",
+      "level": "degraded",
+      "detail": "Degraded performance for Claude Fable 5",
       "components": [
         {
           "id": "claude-ai",
           "name": "claude.ai",
-          "level": "operational",
-          "detail": null
+          "level": "degraded",
+          "detail": "degraded performance"
         },
         {
           "id": "claude-api-api-anthropic-com-",
           "name": "Claude API (api.anthropic.com)",
-          "level": "operational",
-          "detail": null
+          "level": "degraded",
+          "detail": "degraded performance"
         },
         {
           "id": "claude-code",
           "name": "Claude Code",
-          "level": "operational",
-          "detail": null
+          "level": "degraded",
+          "detail": "degraded performance"
         }
       ]
     },

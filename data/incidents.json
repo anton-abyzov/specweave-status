@@ -48,6 +48,18 @@
       "updatedAt": "2026-10-21T18:51:03.436Z",
       "resolvedAt": null,
       "url": "https://www.cloudflarestatus.com/incidents/t77gwnpr6oe5"
+    },
+    {
+      "id": "claude:njk29r81v3wg",
+      "serviceId": "claude",
+      "title": "Degraded performance for Claude Fable 5",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-10-21T19:49:06.486Z",
+      "updatedAt": "2026-10-21T19:49:06.662Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/cgklr4v2sgkh"
     }
   ]
 }
