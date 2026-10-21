@@ -54,11 +54,11 @@
       "serviceId": "claude",
       "title": "Degraded performance for Claude Fable 5",
       "level": "degraded",
-      "stage": "investigating",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-10-21T19:49:06.486Z",
-      "updatedAt": "2026-10-21T19:49:06.662Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-10-21T20:31:12.474Z",
+      "resolvedAt": "2026-10-21T20:31:12.474Z",
       "url": "https://stspg.io/cgklr4v2sgkh"
     }
   ]
