@@ -29,11 +29,11 @@
       "id": "github:nms1dpzmh9d9",
       "serviceId": "github",
       "title": "Delays for Pull Requests and Webhook deliveries",
-      "level": "degraded",
+      "level": "major_outage",
       "stage": "investigating",
       "origin": "upstream",
       "startedAt": "2026-10-21T14:52:49.969Z",
-      "updatedAt": "2026-10-21T15:36:47.785Z",
+      "updatedAt": "2026-10-21T16:17:23.264Z",
       "resolvedAt": null,
       "url": "https://stspg.io/gnnt0tx9nxmk"
     }
