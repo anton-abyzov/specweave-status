@@ -30,11 +30,11 @@
       "serviceId": "github",
       "title": "Delays for Pull Requests and Webhook deliveries",
       "level": "major_outage",
-      "stage": "investigating",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-10-21T14:52:49.969Z",
-      "updatedAt": "2026-10-21T18:52:50.077Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-10-21T19:36:59.384Z",
+      "resolvedAt": "2026-10-21T19:36:59.384Z",
       "url": "https://stspg.io/gnnt0tx9nxmk"
     },
     {
