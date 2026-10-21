@@ -24,6 +24,18 @@
       "updatedAt": "2026-10-19T17:09:34.541Z",
       "resolvedAt": "2026-10-19T17:09:34.541Z",
       "url": "https://stspg.io/nrv2k8s68bwn"
+    },
+    {
+      "id": "github:nms1dpzmh9d9",
+      "serviceId": "github",
+      "title": "Delays for Pull Requests and Webhook deliveries",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-10-21T14:52:49.969Z",
+      "updatedAt": "2026-10-21T14:52:50.124Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/gnnt0tx9nxmk"
     }
   ]
 }
