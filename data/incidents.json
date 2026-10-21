@@ -42,10 +42,10 @@
       "serviceId": "cloudflare",
       "title": "Increased Latency in India",
       "level": "degraded",
-      "stage": "investigating",
+      "stage": "monitoring",
       "origin": "upstream",
       "startedAt": "2026-10-21T16:42:14.640Z",
-      "updatedAt": "2026-10-21T16:42:14.640Z",
+      "updatedAt": "2026-10-21T18:51:03.436Z",
       "resolvedAt": null,
       "url": "https://www.cloudflarestatus.com/incidents/t77gwnpr6oe5"
     }
