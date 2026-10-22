@@ -60,6 +60,18 @@
       "updatedAt": "2026-10-21T20:31:12.474Z",
       "resolvedAt": "2026-10-21T20:31:12.474Z",
       "url": "https://stspg.io/cgklr4v2sgkh"
+    },
+    {
+      "id": "npm:xfp75s9j3bp8",
+      "serviceId": "npm",
+      "title": "Degraded Package Install and Publishing",
+      "level": "partial_outage",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-10-22T02:33:25.767Z",
+      "updatedAt": "2026-10-22T02:37:18.789Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/fr89w5qkp7j4"
     }
   ]
 }
