@@ -72,6 +72,18 @@
       "updatedAt": "2026-10-22T02:37:18.789Z",
       "resolvedAt": null,
       "url": "https://stspg.io/fr89w5qkp7j4"
+    },
+    {
+      "id": "probe:npm-package:1792637831320",
+      "serviceId": "npm-package",
+      "title": "npm package: Latest version published: Timed out",
+      "level": "major_outage",
+      "stage": "investigating",
+      "origin": "probe",
+      "startedAt": "2026-10-22T02:40:38.547Z",
+      "updatedAt": "2026-10-22T02:57:11.320Z",
+      "resolvedAt": null,
+      "url": null
     }
   ]
 }
