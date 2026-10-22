@@ -66,11 +66,11 @@
       "serviceId": "npm",
       "title": "Degraded Package Install and Publishing",
       "level": "partial_outage",
-      "stage": "monitoring",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-10-22T02:33:25.767Z",
-      "updatedAt": "2026-10-22T04:10:58.285Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-10-22T04:41:42.183Z",
+      "resolvedAt": "2026-10-22T04:41:42.183Z",
       "url": "https://stspg.io/fr89w5qkp7j4"
     },
     {
