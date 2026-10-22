@@ -102,11 +102,11 @@
       "serviceId": "npm",
       "title": "Degraded Publish, Install, and View Package",
       "level": "degraded",
-      "stage": "monitoring",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-10-22T06:43:54.953Z",
-      "updatedAt": "2026-10-22T09:00:47.739Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-10-22T12:26:27.735Z",
+      "resolvedAt": "2026-10-22T12:26:27.735Z",
       "url": "https://stspg.io/tskn6kv96vs9"
     }
   ]
