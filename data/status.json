@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T23:48:05.512Z",
+  "generatedAt": "2026-10-22T23:56:07.830Z",
   "level": "degraded",
   "services": [
     {
@@ -13,22 +13,22 @@
           "id": "home",
           "name": "Home page",
           "level": "operational",
-          "detail": "Responding in 427 ms",
-          "ms": 427
+          "detail": "Responding in 146 ms",
+          "ms": 146
         },
         {
           "id": "docs",
           "name": "Documentation",
           "level": "operational",
-          "detail": "Responding in 253 ms",
-          "ms": 253
+          "detail": "Responding in 183 ms",
+          "ms": 183
         },
         {
           "id": "studio",
           "name": "SpecWithCode page",
           "level": "operational",
-          "detail": "Responding in 269 ms",
-          "ms": 269
+          "detail": "Responding in 162 ms",
+          "ms": 162
         }
       ]
     },
@@ -43,7 +43,7 @@
           "name": "Latest version published",
           "level": "operational",
           "detail": "specweave@3.1.5",
-          "ms": 235
+          "ms": 145
         }
       ]
     },
@@ -51,14 +51,14 @@
       "id": "plugin",
       "name": "Claude Code plugin",
       "level": "operational",
-      "detail": "Version 3.1.5",
+      "detail": "Version 3.1.6",
       "components": [
         {
           "id": "marketplace",
           "name": "Marketplace manifest",
           "level": "operational",
-          "detail": "Version 3.1.5",
-          "ms": 210
+          "detail": "Version 3.1.6",
+          "ms": 168
         }
       ]
     },
@@ -73,14 +73,14 @@
           "name": "Latest release",
           "level": "operational",
           "detail": "v1.0.73, published October 22, 2026",
-          "ms": 391
+          "ms": 355
         },
         {
           "id": "dmg",
           "name": "macOS installer (Apple silicon)",
           "level": "operational",
           "detail": "Download available",
-          "ms": 1066
+          "ms": 400
         }
       ]
     },
@@ -94,15 +94,15 @@
           "id": "mac-feed",
           "name": "macOS update feed",
           "level": "operational",
-          "detail": "Responding in 1045 ms",
-          "ms": 1045
+          "detail": "Responding in 418 ms",
+          "ms": 418
         },
         {
           "id": "service-feed",
           "name": "Service update manifest",
           "level": "operational",
           "detail": "Version 1.0.73",
-          "ms": 1188
+          "ms": 502
         }
       ]
     },
