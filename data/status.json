@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T15:20:26.764Z",
-  "level": "operational",
+  "generatedAt": "2026-10-22T15:40:05.333Z",
+  "level": "degraded",
   "services": [
     {
       "id": "website",
@@ -13,22 +13,22 @@
           "id": "home",
           "name": "Home page",
           "level": "operational",
-          "detail": "Responding in 418 ms",
-          "ms": 418
+          "detail": "Responding in 240 ms",
+          "ms": 240
         },
         {
           "id": "docs",
           "name": "Documentation",
           "level": "operational",
-          "detail": "Responding in 318 ms",
-          "ms": 318
+          "detail": "Responding in 227 ms",
+          "ms": 227
         },
         {
           "id": "studio",
           "name": "SpecWithCode page",
           "level": "operational",
-          "detail": "Responding in 257 ms",
-          "ms": 257
+          "detail": "Responding in 207 ms",
+          "ms": 207
         }
       ]
     },
@@ -43,7 +43,7 @@
           "name": "Latest version published",
           "level": "operational",
           "detail": "specweave@3.1.5",
-          "ms": 851
+          "ms": 139
         }
       ]
     },
@@ -58,7 +58,7 @@
           "name": "Marketplace manifest",
           "level": "operational",
           "detail": "Version 3.1.5",
-          "ms": 436
+          "ms": 164
         }
       ]
     },
@@ -73,14 +73,14 @@
           "name": "Latest release",
           "level": "operational",
           "detail": "v1.0.71, published October 22, 2026",
-          "ms": 477
+          "ms": 283
         },
         {
           "id": "dmg",
           "name": "macOS installer (Apple silicon)",
           "level": "operational",
           "detail": "Download available",
-          "ms": 942
+          "ms": 490
         }
       ]
     },
@@ -94,23 +94,23 @@
           "id": "mac-feed",
           "name": "macOS update feed",
           "level": "operational",
-          "detail": "Responding in 930 ms",
-          "ms": 930
+          "detail": "Responding in 435 ms",
+          "ms": 435
         },
         {
           "id": "service-feed",
           "name": "Service update manifest",
           "level": "operational",
           "detail": "Version 1.0.71",
-          "ms": 926
+          "ms": 493
         }
       ]
     },
     {
       "id": "github",
       "name": "GitHub",
-      "level": "operational",
-      "detail": "All tracked components operational.",
+      "level": "degraded",
+      "detail": "Errors loading Issues, Pull Requests, and search results",
       "components": [
         {
           "id": "git-operations",
@@ -127,8 +127,8 @@
         {
           "id": "actions",
           "name": "Actions",
-          "level": "operational",
-          "detail": null
+          "level": "degraded",
+          "detail": "degraded performance"
         },
         {
           "id": "packages",

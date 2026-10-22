@@ -120,6 +120,18 @@
       "updatedAt": "2026-10-22T15:20:26.764Z",
       "resolvedAt": "2026-10-22T15:20:26.764Z",
       "url": "https://stspg.io/44w94j036yc8"
+    },
+    {
+      "id": "github:wq8305lppdc2",
+      "serviceId": "github",
+      "title": "Errors loading Issues, Pull Requests, and search results",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-10-22T15:28:03.979Z",
+      "updatedAt": "2026-10-22T15:33:52.381Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/sx51v1tlpqjc"
     }
   ]
 }
