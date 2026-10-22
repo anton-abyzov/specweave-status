@@ -108,6 +108,18 @@
       "updatedAt": "2026-10-22T12:26:27.735Z",
       "resolvedAt": "2026-10-22T12:26:27.735Z",
       "url": "https://stspg.io/tskn6kv96vs9"
+    },
+    {
+      "id": "github:q29p76qtnkyk",
+      "serviceId": "github",
+      "title": "Incident with Actions Results",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-10-22T14:18:15.716Z",
+      "updatedAt": "2026-10-22T14:19:32.591Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/44w94j036yc8"
     }
   ]
 }
