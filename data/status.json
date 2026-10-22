@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T08:49:54.231Z",
+  "generatedAt": "2026-10-22T08:59:49.945Z",
   "level": "degraded",
   "services": [
     {
@@ -13,22 +13,22 @@
           "id": "home",
           "name": "Home page",
           "level": "operational",
-          "detail": "Responding in 464 ms",
-          "ms": 464
+          "detail": "Responding in 495 ms",
+          "ms": 495
         },
         {
           "id": "docs",
           "name": "Documentation",
           "level": "operational",
-          "detail": "Responding in 243 ms",
-          "ms": 243
+          "detail": "Responding in 441 ms",
+          "ms": 441
         },
         {
           "id": "studio",
           "name": "SpecWithCode page",
           "level": "operational",
-          "detail": "Responding in 432 ms",
-          "ms": 432
+          "detail": "Responding in 453 ms",
+          "ms": 453
         }
       ]
     },
@@ -43,7 +43,7 @@
           "name": "Latest version published",
           "level": "operational",
           "detail": "specweave@3.1.5",
-          "ms": 492
+          "ms": 432
         }
       ]
     },
@@ -58,7 +58,7 @@
           "name": "Marketplace manifest",
           "level": "operational",
           "detail": "Version 3.1.5",
-          "ms": 225
+          "ms": 460
         }
       ]
     },
@@ -73,14 +73,14 @@
           "name": "Latest release",
           "level": "operational",
           "detail": "v1.0.69, published October 22, 2026",
-          "ms": 372
+          "ms": 508
         },
         {
           "id": "dmg",
           "name": "macOS installer (Apple silicon)",
           "level": "operational",
           "detail": "Download available",
-          "ms": 511
+          "ms": 979
         }
       ]
     },
@@ -94,15 +94,15 @@
           "id": "mac-feed",
           "name": "macOS update feed",
           "level": "operational",
-          "detail": "Responding in 516 ms",
-          "ms": 516
+          "detail": "Responding in 1044 ms",
+          "ms": 1044
         },
         {
           "id": "service-feed",
           "name": "Service update manifest",
           "level": "operational",
           "detail": "Version 1.0.69",
-          "ms": 590
+          "ms": 980
         }
       ]
     },
@@ -231,14 +231,14 @@
     {
       "id": "openai",
       "name": "OpenAI",
-      "level": "degraded",
-      "detail": "Responses: degraded performance",
+      "level": "operational",
+      "detail": "All tracked components operational.",
       "components": [
         {
           "id": "responses",
           "name": "Responses",
-          "level": "degraded",
-          "detail": "degraded performance"
+          "level": "operational",
+          "detail": null
         },
         {
           "id": "login",
