@@ -124,12 +124,12 @@
     {
       "id": "github:wq8305lppdc2",
       "serviceId": "github",
-      "title": "Errors loading Issues, Pull Requests, and search results",
+      "title": "Project updates delayed",
       "level": "degraded",
       "stage": "investigating",
       "origin": "upstream",
       "startedAt": "2026-10-22T15:28:03.979Z",
-      "updatedAt": "2026-10-22T22:07:36.310Z",
+      "updatedAt": "2026-10-22T22:28:45.067Z",
       "resolvedAt": null,
       "url": "https://stspg.io/sx51v1tlpqjc"
     },
