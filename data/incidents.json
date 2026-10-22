@@ -129,9 +129,21 @@
       "stage": "investigating",
       "origin": "upstream",
       "startedAt": "2026-10-22T15:28:03.979Z",
-      "updatedAt": "2026-10-22T16:41:52.515Z",
+      "updatedAt": "2026-10-22T17:16:06.208Z",
       "resolvedAt": null,
       "url": "https://stspg.io/sx51v1tlpqjc"
+    },
+    {
+      "id": "cloudflare:l0gsc0sccx2v",
+      "serviceId": "cloudflare",
+      "title": "Elevated errors for some requests in Ashburn, Virginia",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-10-22T17:01:31.000Z",
+      "updatedAt": "2026-10-22T17:01:31.000Z",
+      "resolvedAt": null,
+      "url": "https://www.cloudflarestatus.com/incidents/l0gsc0sccx2v"
     }
   ]
 }
