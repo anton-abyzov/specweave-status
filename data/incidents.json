@@ -96,6 +96,18 @@
       "updatedAt": "2026-10-22T03:50:12.763Z",
       "resolvedAt": null,
       "url": "https://stspg.io/4dcr8c005yxc"
+    },
+    {
+      "id": "npm:56x3sh4qhr9s",
+      "serviceId": "npm",
+      "title": "Degraded Publish, Install, and View Package",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-10-22T06:43:54.953Z",
+      "updatedAt": "2026-10-22T06:43:55.799Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/tskn6kv96vs9"
     }
   ]
 }
