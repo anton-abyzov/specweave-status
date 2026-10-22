@@ -114,11 +114,11 @@
       "serviceId": "github",
       "title": "Incident with Actions Results",
       "level": "degraded",
-      "stage": "investigating",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-10-22T14:18:15.716Z",
-      "updatedAt": "2026-10-22T14:35:29.243Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-10-22T15:20:26.764Z",
+      "resolvedAt": "2026-10-22T15:20:26.764Z",
       "url": "https://stspg.io/44w94j036yc8"
     }
   ]
