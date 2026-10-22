@@ -90,11 +90,11 @@
       "serviceId": "claude",
       "title": "Elevated errors affecting Connectors",
       "level": "degraded",
-      "stage": "monitoring",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-10-22T03:50:12.621Z",
-      "updatedAt": "2026-10-22T07:28:22.829Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-10-22T08:29:01.489Z",
+      "resolvedAt": "2026-10-22T08:29:01.489Z",
       "url": "https://stspg.io/4dcr8c005yxc"
     },
     {
