@@ -66,10 +66,10 @@
       "serviceId": "npm",
       "title": "Degraded Package Install and Publishing",
       "level": "partial_outage",
-      "stage": "investigating",
+      "stage": "identified",
       "origin": "upstream",
       "startedAt": "2026-10-22T02:33:25.767Z",
-      "updatedAt": "2026-10-22T02:37:18.789Z",
+      "updatedAt": "2026-10-22T03:07:55.110Z",
       "resolvedAt": null,
       "url": "https://stspg.io/fr89w5qkp7j4"
     },
@@ -78,10 +78,10 @@
       "serviceId": "npm-package",
       "title": "npm package: Latest version published: Timed out",
       "level": "major_outage",
-      "stage": "investigating",
+      "stage": "monitoring",
       "origin": "probe",
       "startedAt": "2026-10-22T02:40:38.547Z",
-      "updatedAt": "2026-10-22T02:57:11.320Z",
+      "updatedAt": "2026-10-22T03:23:24.381Z",
       "resolvedAt": null,
       "url": null
     }
