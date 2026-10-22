@@ -78,11 +78,11 @@
       "serviceId": "npm-package",
       "title": "npm package: Latest version published: Timed out",
       "level": "major_outage",
-      "stage": "monitoring",
+      "stage": "resolved",
       "origin": "probe",
       "startedAt": "2026-10-22T02:40:38.547Z",
-      "updatedAt": "2026-10-22T03:23:24.381Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-10-22T03:43:15.962Z",
+      "resolvedAt": "2026-10-22T03:43:15.962Z",
       "url": null
     }
   ]
