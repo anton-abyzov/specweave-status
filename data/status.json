@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-22T17:30:56.021Z",
+  "generatedAt": "2026-10-22T17:45:37.191Z",
   "level": "degraded",
   "services": [
     {
@@ -13,22 +13,22 @@
           "id": "home",
           "name": "Home page",
           "level": "operational",
-          "detail": "Responding in 376 ms",
-          "ms": 376
+          "detail": "Responding in 210 ms",
+          "ms": 210
         },
         {
           "id": "docs",
           "name": "Documentation",
           "level": "operational",
-          "detail": "Responding in 260 ms",
-          "ms": 260
+          "detail": "Responding in 250 ms",
+          "ms": 250
         },
         {
           "id": "studio",
           "name": "SpecWithCode page",
           "level": "operational",
-          "detail": "Responding in 329 ms",
-          "ms": 329
+          "detail": "Responding in 177 ms",
+          "ms": 177
         }
       ]
     },
@@ -43,7 +43,7 @@
           "name": "Latest version published",
           "level": "operational",
           "detail": "specweave@3.1.5",
-          "ms": 324
+          "ms": 242
         }
       ]
     },
@@ -58,7 +58,7 @@
           "name": "Marketplace manifest",
           "level": "operational",
           "detail": "Version 3.1.5",
-          "ms": 191
+          "ms": 124
         }
       ]
     },
@@ -73,7 +73,7 @@
           "name": "Latest release",
           "level": "operational",
           "detail": "v1.0.71, published October 22, 2026",
-          "ms": 275
+          "ms": 198
         },
         {
           "id": "dmg",
@@ -94,15 +94,15 @@
           "id": "mac-feed",
           "name": "macOS update feed",
           "level": "operational",
-          "detail": "Responding in 377 ms",
-          "ms": 377
+          "detail": "Responding in 255 ms",
+          "ms": 255
         },
         {
           "id": "service-feed",
           "name": "Service update manifest",
           "level": "operational",
           "detail": "Version 1.0.71",
-          "ms": 397
+          "ms": 283
         }
       ]
     },
@@ -127,14 +127,14 @@
         {
           "id": "actions",
           "name": "Actions",
-          "level": "degraded",
-          "detail": "degraded performance"
+          "level": "operational",
+          "detail": null
         },
         {
           "id": "packages",
           "name": "Packages",
-          "level": "degraded",
-          "detail": "degraded performance"
+          "level": "operational",
+          "detail": null
         },
         {
           "id": "pages",
@@ -147,8 +147,8 @@
     {
       "id": "cloudflare",
       "name": "Cloudflare",
-      "level": "degraded",
-      "detail": "Elevated errors for some requests in Ashburn, Virginia",
+      "level": "operational",
+      "detail": "All tracked components operational.",
       "components": [
         {
           "id": "authoritative-dns",
@@ -159,8 +159,8 @@
         {
           "id": "cdn-cache",
           "name": "CDN/Cache",
-          "level": "degraded",
-          "detail": "degraded performance"
+          "level": "operational",
+          "detail": null
         },
         {
           "id": "dns-updates",
