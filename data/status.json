@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-23T10:30:29.963Z",
+  "generatedAt": "2026-10-23T10:46:28.026Z",
   "level": "operational",
   "services": [
     {
@@ -13,8 +13,8 @@
           "id": "home",
           "name": "Home page",
           "level": "operational",
-          "detail": "Responding in 393 ms",
-          "ms": 393
+          "detail": "Responding in 243 ms",
+          "ms": 243
         },
         {
           "id": "docs",
@@ -27,8 +27,8 @@
           "id": "studio",
           "name": "SpecWithCode page",
           "level": "operational",
-          "detail": "Responding in 224 ms",
-          "ms": 224
+          "detail": "Responding in 192 ms",
+          "ms": 192
         }
       ]
     },
@@ -43,7 +43,7 @@
           "name": "Latest version published",
           "level": "operational",
           "detail": "specweave@3.1.6",
-          "ms": 207
+          "ms": 706
         }
       ]
     },
@@ -58,7 +58,7 @@
           "name": "Marketplace manifest",
           "level": "operational",
           "detail": "Version 3.1.6",
-          "ms": 148
+          "ms": 227
         }
       ]
     },
@@ -73,14 +73,14 @@
           "name": "Latest release",
           "level": "operational",
           "detail": "v1.0.74, published October 23, 2026",
-          "ms": 258
+          "ms": 288
         },
         {
           "id": "dmg",
           "name": "macOS installer (Apple silicon)",
           "level": "operational",
           "detail": "Download available",
-          "ms": 439
+          "ms": 476
         }
       ]
     },
@@ -94,15 +94,15 @@
           "id": "mac-feed",
           "name": "macOS update feed",
           "level": "operational",
-          "detail": "Responding in 408 ms",
-          "ms": 408
+          "detail": "Responding in 453 ms",
+          "ms": 453
         },
         {
           "id": "service-feed",
           "name": "Service update manifest",
           "level": "operational",
           "detail": "Version 1.0.74",
-          "ms": 486
+          "ms": 437
         }
       ]
     },
