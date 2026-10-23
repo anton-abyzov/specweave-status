@@ -150,10 +150,10 @@
       "serviceId": "github",
       "title": "Delayed Actions status check results",
       "level": "degraded",
-      "stage": "investigating",
+      "stage": "monitoring",
       "origin": "upstream",
       "startedAt": "2026-10-23T07:29:03.074Z",
-      "updatedAt": "2026-10-23T07:31:54.569Z",
+      "updatedAt": "2026-10-23T07:56:35.641Z",
       "resolvedAt": null,
       "url": "https://stspg.io/kmk42jg3v1sm"
     }
