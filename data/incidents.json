@@ -172,12 +172,12 @@
     {
       "id": "claude:h101vcmhnfky",
       "serviceId": "claude",
-      "title": "Elevated errors for Claude Fable 5.1",
+      "title": "Elevated errors for Claude Fable 5.1, Sonnet 5.5, and Haiku 5.5",
       "level": "major_outage",
-      "stage": "investigating",
+      "stage": "identified",
       "origin": "upstream",
       "startedAt": "2026-10-23T23:37:42.659Z",
-      "updatedAt": "2026-10-23T23:37:42.940Z",
+      "updatedAt": "2026-10-23T23:39:22.610Z",
       "resolvedAt": null,
       "url": "https://stspg.io/gqp288t3qzpt"
     }
