@@ -162,11 +162,11 @@
       "serviceId": "github",
       "title": "Disruption with Dependabot Alerts",
       "level": "degraded",
-      "stage": "monitoring",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-10-23T14:58:48.741Z",
-      "updatedAt": "2026-10-23T18:36:15.079Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-10-23T19:09:45.577Z",
+      "resolvedAt": "2026-10-23T19:09:45.577Z",
       "url": "https://stspg.io/zdk3zqt69fnz"
     }
   ]
