@@ -126,10 +126,10 @@
       "serviceId": "github",
       "title": "Project updates delayed",
       "level": "degraded",
-      "stage": "investigating",
+      "stage": "monitoring",
       "origin": "upstream",
       "startedAt": "2026-10-22T15:28:03.979Z",
-      "updatedAt": "2026-10-22T23:48:05.360Z",
+      "updatedAt": "2026-10-23T00:55:18.059Z",
       "resolvedAt": null,
       "url": "https://stspg.io/sx51v1tlpqjc"
     },
