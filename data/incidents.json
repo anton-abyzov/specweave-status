@@ -144,6 +144,18 @@
       "updatedAt": "2026-10-22T17:45:37.191Z",
       "resolvedAt": "2026-10-22T17:45:37.191Z",
       "url": "https://www.cloudflarestatus.com/incidents/l0gsc0sccx2v"
+    },
+    {
+      "id": "github:ntrfd2jqldn6",
+      "serviceId": "github",
+      "title": "Delayed Actions status check results",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-10-23T07:29:03.074Z",
+      "updatedAt": "2026-10-23T07:31:54.569Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/kmk42jg3v1sm"
     }
   ]
 }
