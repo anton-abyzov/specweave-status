@@ -196,12 +196,12 @@
     {
       "id": "claude:0ns5clsk8p2x",
       "serviceId": "claude",
-      "title": "Elevated errors for other Claude models",
+      "title": "Elevated errors for Claude Fable 5 and Claude Fable 5.1",
       "level": "partial_outage",
-      "stage": "identified",
+      "stage": "monitoring",
       "origin": "upstream",
       "startedAt": "2026-10-24T05:16:50.579Z",
-      "updatedAt": "2026-10-24T05:24:53.032Z",
+      "updatedAt": "2026-10-24T05:41:17.492Z",
       "resolvedAt": null,
       "url": "https://stspg.io/7n1wgb6qsfly"
     }
