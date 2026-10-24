@@ -186,11 +186,11 @@
       "serviceId": "claude",
       "title": "Elevated errors for Claude Opus 5.5",
       "level": "partial_outage",
-      "stage": "investigating",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-10-24T00:31:37.594Z",
-      "updatedAt": "2026-10-24T00:31:37.911Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-10-24T01:08:14.632Z",
+      "resolvedAt": "2026-10-24T01:08:14.632Z",
       "url": "https://stspg.io/dmn3bc440bnb"
     }
   ]
