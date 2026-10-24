@@ -192,6 +192,18 @@
       "updatedAt": "2026-10-24T01:08:14.632Z",
       "resolvedAt": "2026-10-24T01:08:14.632Z",
       "url": "https://stspg.io/dmn3bc440bnb"
+    },
+    {
+      "id": "claude:0ns5clsk8p2x",
+      "serviceId": "claude",
+      "title": "Elevated errors for other Claude models",
+      "level": "partial_outage",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-10-24T05:16:50.579Z",
+      "updatedAt": "2026-10-24T05:16:50.870Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/7n1wgb6qsfly"
     }
   ]
 }
