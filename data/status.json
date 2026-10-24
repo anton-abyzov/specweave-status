@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T15:36:27.032Z",
+  "generatedAt": "2026-10-24T15:44:40.281Z",
   "level": "operational",
   "services": [
     {
@@ -20,15 +20,15 @@
           "id": "docs",
           "name": "Documentation",
           "level": "operational",
-          "detail": "Responding in 209 ms",
-          "ms": 209
+          "detail": "Responding in 147 ms",
+          "ms": 147
         },
         {
           "id": "studio",
           "name": "SpecWithCode page",
           "level": "operational",
-          "detail": "Responding in 203 ms",
-          "ms": 203
+          "detail": "Responding in 154 ms",
+          "ms": 154
         }
       ]
     },
@@ -43,7 +43,7 @@
           "name": "Latest version published",
           "level": "operational",
           "detail": "specweave@3.1.9",
-          "ms": 175
+          "ms": 160
         }
       ]
     },
@@ -58,7 +58,7 @@
           "name": "Marketplace manifest",
           "level": "operational",
           "detail": "Version 3.1.9",
-          "ms": 179
+          "ms": 122
         }
       ]
     },
@@ -73,14 +73,14 @@
           "name": "Latest release",
           "level": "operational",
           "detail": "v1.0.75, published October 23, 2026",
-          "ms": 367
+          "ms": 260
         },
         {
           "id": "dmg",
           "name": "macOS installer (Apple silicon)",
           "level": "operational",
           "detail": "Download available",
-          "ms": 474
+          "ms": 333
         }
       ]
     },
@@ -94,15 +94,15 @@
           "id": "mac-feed",
           "name": "macOS update feed",
           "level": "operational",
-          "detail": "Responding in 495 ms",
-          "ms": 495
+          "detail": "Responding in 327 ms",
+          "ms": 327
         },
         {
           "id": "service-feed",
           "name": "Service update manifest",
           "level": "operational",
           "detail": "Version 1.0.75",
-          "ms": 537
+          "ms": 322
         }
       ]
     },
