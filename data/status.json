@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-24T05:24:43.861Z",
+  "generatedAt": "2026-10-24T05:39:13.182Z",
   "level": "partial_outage",
   "services": [
     {
@@ -13,22 +13,22 @@
           "id": "home",
           "name": "Home page",
           "level": "operational",
-          "detail": "Responding in 669 ms",
-          "ms": 669
+          "detail": "Responding in 348 ms",
+          "ms": 348
         },
         {
           "id": "docs",
           "name": "Documentation",
           "level": "operational",
-          "detail": "Responding in 948 ms",
-          "ms": 948
+          "detail": "Responding in 217 ms",
+          "ms": 217
         },
         {
           "id": "studio",
           "name": "SpecWithCode page",
           "level": "operational",
-          "detail": "Responding in 458 ms",
-          "ms": 458
+          "detail": "Responding in 221 ms",
+          "ms": 221
         }
       ]
     },
@@ -43,7 +43,7 @@
           "name": "Latest version published",
           "level": "operational",
           "detail": "specweave@3.1.9",
-          "ms": 454
+          "ms": 1871
         }
       ]
     },
@@ -58,7 +58,7 @@
           "name": "Marketplace manifest",
           "level": "operational",
           "detail": "Version 3.1.9",
-          "ms": 450
+          "ms": 194
         }
       ]
     },
@@ -73,14 +73,14 @@
           "name": "Latest release",
           "level": "operational",
           "detail": "v1.0.75, published October 23, 2026",
-          "ms": 469
+          "ms": 241
         },
         {
           "id": "dmg",
           "name": "macOS installer (Apple silicon)",
           "level": "operational",
           "detail": "Download available",
-          "ms": 1130
+          "ms": 1879
         }
       ]
     },
@@ -94,15 +94,15 @@
           "id": "mac-feed",
           "name": "macOS update feed",
           "level": "operational",
-          "detail": "Responding in 1236 ms",
-          "ms": 1236
+          "detail": "Responding in 1874 ms",
+          "ms": 1874
         },
         {
           "id": "service-feed",
           "name": "Service update manifest",
           "level": "operational",
           "detail": "Version 1.0.75",
-          "ms": 1148
+          "ms": 1880
         }
       ]
     },
@@ -217,8 +217,8 @@
         {
           "id": "claude-api-api-anthropic-com-",
           "name": "Claude API (api.anthropic.com)",
-          "level": "partial_outage",
-          "detail": "partial outage"
+          "level": "operational",
+          "detail": null
         },
         {
           "id": "claude-code",
