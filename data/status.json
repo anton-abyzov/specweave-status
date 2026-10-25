@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-25T02:53:49.188Z",
+  "generatedAt": "2026-10-25T02:58:17.630Z",
   "level": "operational",
   "services": [
     {
@@ -13,22 +13,22 @@
           "id": "home",
           "name": "Home page",
           "level": "operational",
-          "detail": "Responding in 211 ms",
-          "ms": 211
+          "detail": "Responding in 332 ms",
+          "ms": 332
         },
         {
           "id": "docs",
           "name": "Documentation",
           "level": "operational",
-          "detail": "Responding in 166 ms",
-          "ms": 166
+          "detail": "Responding in 249 ms",
+          "ms": 249
         },
         {
           "id": "studio",
           "name": "SpecWithCode page",
           "level": "operational",
-          "detail": "Responding in 168 ms",
-          "ms": 168
+          "detail": "Responding in 223 ms",
+          "ms": 223
         }
       ]
     },
@@ -43,7 +43,7 @@
           "name": "Latest version published",
           "level": "operational",
           "detail": "specweave@3.1.10",
-          "ms": 230
+          "ms": 214
         }
       ]
     },
@@ -58,7 +58,7 @@
           "name": "Marketplace manifest",
           "level": "operational",
           "detail": "Version 3.1.10",
-          "ms": 154
+          "ms": 184
         }
       ]
     },
@@ -73,14 +73,14 @@
           "name": "Latest release",
           "level": "operational",
           "detail": "v1.0.76, published October 24, 2026",
-          "ms": 232
+          "ms": 336
         },
         {
           "id": "dmg",
           "name": "macOS installer (Apple silicon)",
           "level": "operational",
           "detail": "Download available",
-          "ms": 376
+          "ms": 731
         }
       ]
     },
@@ -94,15 +94,15 @@
           "id": "mac-feed",
           "name": "macOS update feed",
           "level": "operational",
-          "detail": "Responding in 366 ms",
-          "ms": 366
+          "detail": "Responding in 582 ms",
+          "ms": 582
         },
         {
           "id": "service-feed",
           "name": "Service update manifest",
           "level": "operational",
           "detail": "Version 1.0.76",
-          "ms": 303
+          "ms": 582
         }
       ]
     },
