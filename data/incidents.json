@@ -216,6 +216,18 @@
       "updatedAt": "2026-10-25T07:57:34.537Z",
       "resolvedAt": "2026-10-25T07:57:34.537Z",
       "url": "https://stspg.io/s3wd6gmdsdhn"
+    },
+    {
+      "id": "claude:vx06kp8wfpq2",
+      "serviceId": "claude",
+      "title": "Elevated errors for Claude Fable 5.1",
+      "level": "partial_outage",
+      "stage": "identified",
+      "origin": "upstream",
+      "startedAt": "2026-10-25T08:17:08.277Z",
+      "updatedAt": "2026-10-25T08:17:18.956Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/y0gkl12ztjst"
     }
   ]
 }
