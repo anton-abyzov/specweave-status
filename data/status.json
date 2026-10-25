@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-25T08:40:53.502Z",
-  "level": "partial_outage",
+  "generatedAt": "2026-10-25T08:54:43.569Z",
+  "level": "operational",
   "services": [
     {
       "id": "website",
@@ -13,22 +13,22 @@
           "id": "home",
           "name": "Home page",
           "level": "operational",
-          "detail": "Responding in 257 ms",
-          "ms": 257
+          "detail": "Responding in 234 ms",
+          "ms": 234
         },
         {
           "id": "docs",
           "name": "Documentation",
           "level": "operational",
-          "detail": "Responding in 233 ms",
-          "ms": 233
+          "detail": "Responding in 192 ms",
+          "ms": 192
         },
         {
           "id": "studio",
           "name": "SpecWithCode page",
           "level": "operational",
-          "detail": "Responding in 245 ms",
-          "ms": 245
+          "detail": "Responding in 239 ms",
+          "ms": 239
         }
       ]
     },
@@ -43,7 +43,7 @@
           "name": "Latest version published",
           "level": "operational",
           "detail": "specweave@3.1.10",
-          "ms": 155
+          "ms": 225
         }
       ]
     },
@@ -58,7 +58,7 @@
           "name": "Marketplace manifest",
           "level": "operational",
           "detail": "Version 3.1.10",
-          "ms": 196
+          "ms": 184
         }
       ]
     },
@@ -73,14 +73,14 @@
           "name": "Latest release",
           "level": "operational",
           "detail": "v1.0.77, published October 25, 2026",
-          "ms": 250
+          "ms": 346
         },
         {
           "id": "dmg",
           "name": "macOS installer (Apple silicon)",
           "level": "operational",
           "detail": "Download available",
-          "ms": 373
+          "ms": 425
         }
       ]
     },
@@ -94,15 +94,15 @@
           "id": "mac-feed",
           "name": "macOS update feed",
           "level": "operational",
-          "detail": "Responding in 445 ms",
-          "ms": 445
+          "detail": "Responding in 458 ms",
+          "ms": 458
         },
         {
           "id": "service-feed",
           "name": "Service update manifest",
           "level": "operational",
           "detail": "Version 1.0.77",
-          "ms": 533
+          "ms": 519
         }
       ]
     },
@@ -205,8 +205,8 @@
     {
       "id": "claude",
       "name": "Claude",
-      "level": "partial_outage",
-      "detail": "Elevated errors for Claude Fable 5.1",
+      "level": "operational",
+      "detail": "All tracked components operational.",
       "components": [
         {
           "id": "claude-ai",
