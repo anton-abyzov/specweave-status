@@ -222,10 +222,10 @@
       "serviceId": "claude",
       "title": "Elevated errors for Claude Fable 5.1",
       "level": "partial_outage",
-      "stage": "identified",
+      "stage": "monitoring",
       "origin": "upstream",
       "startedAt": "2026-10-25T08:17:08.277Z",
-      "updatedAt": "2026-10-25T08:17:18.956Z",
+      "updatedAt": "2026-10-25T08:30:47.090Z",
       "resolvedAt": null,
       "url": "https://stspg.io/y0gkl12ztjst"
     }
