@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-26T05:48:27.114Z",
-  "level": "operational",
+  "generatedAt": "2026-10-26T05:59:41.131Z",
+  "level": "partial_outage",
   "services": [
     {
       "id": "website",
@@ -13,22 +13,22 @@
           "id": "home",
           "name": "Home page",
           "level": "operational",
-          "detail": "Responding in 170 ms",
-          "ms": 170
+          "detail": "Responding in 210 ms",
+          "ms": 210
         },
         {
           "id": "docs",
           "name": "Documentation",
           "level": "operational",
-          "detail": "Responding in 158 ms",
-          "ms": 158
+          "detail": "Responding in 161 ms",
+          "ms": 161
         },
         {
           "id": "studio",
           "name": "SpecWithCode page",
           "level": "operational",
-          "detail": "Responding in 147 ms",
-          "ms": 147
+          "detail": "Responding in 162 ms",
+          "ms": 162
         }
       ]
     },
@@ -43,7 +43,7 @@
           "name": "Latest version published",
           "level": "operational",
           "detail": "specweave@3.1.10",
-          "ms": 187
+          "ms": 190
         }
       ]
     },
@@ -58,7 +58,7 @@
           "name": "Marketplace manifest",
           "level": "operational",
           "detail": "Version 3.1.10",
-          "ms": 229
+          "ms": 134
         }
       ]
     },
@@ -73,14 +73,14 @@
           "name": "Latest release",
           "level": "operational",
           "detail": "v1.0.89, published October 26, 2026",
-          "ms": 231
+          "ms": 229
         },
         {
           "id": "dmg",
           "name": "macOS installer (Apple silicon)",
           "level": "operational",
           "detail": "Download available",
-          "ms": 432
+          "ms": 358
         }
       ]
     },
@@ -94,15 +94,15 @@
           "id": "mac-feed",
           "name": "macOS update feed",
           "level": "operational",
-          "detail": "Responding in 376 ms",
-          "ms": 376
+          "detail": "Responding in 326 ms",
+          "ms": 326
         },
         {
           "id": "service-feed",
           "name": "Service update manifest",
           "level": "operational",
           "detail": "Version 1.0.89",
-          "ms": 368
+          "ms": 317
         }
       ]
     },
@@ -179,14 +179,14 @@
     {
       "id": "npm",
       "name": "npm",
-      "level": "operational",
-      "detail": "All tracked components operational.",
+      "level": "partial_outage",
+      "detail": "View package and auth outage on npmjs.com",
       "components": [
         {
           "id": "www-npmjs-com-website",
           "name": "www.npmjs.com website",
-          "level": "operational",
-          "detail": null
+          "level": "partial_outage",
+          "detail": "partial outage"
         },
         {
           "id": "package-installation",

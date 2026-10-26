@@ -228,6 +228,18 @@
       "updatedAt": "2026-10-25T08:54:43.569Z",
       "resolvedAt": "2026-10-25T08:54:43.569Z",
       "url": "https://stspg.io/y0gkl12ztjst"
+    },
+    {
+      "id": "npm:hf0q2nhdk5cp",
+      "serviceId": "npm",
+      "title": "View package and auth outage on npmjs.com",
+      "level": "partial_outage",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-10-26T05:54:32.523Z",
+      "updatedAt": "2026-10-26T05:54:35.373Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/5rh64dpfcvqz"
     }
   ]
 }
