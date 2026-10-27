@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-27T09:23:49.317Z",
+  "generatedAt": "2026-10-27T09:42:47.088Z",
   "level": "partial_outage",
   "services": [
     {
@@ -13,22 +13,22 @@
           "id": "home",
           "name": "Home page",
           "level": "operational",
-          "detail": "Responding in 324 ms",
-          "ms": 324
+          "detail": "Responding in 659 ms",
+          "ms": 659
         },
         {
           "id": "docs",
           "name": "Documentation",
           "level": "operational",
-          "detail": "Responding in 217 ms",
-          "ms": 217
+          "detail": "Responding in 444 ms",
+          "ms": 444
         },
         {
           "id": "studio",
           "name": "SpecWithCode page",
           "level": "operational",
-          "detail": "Responding in 228 ms",
-          "ms": 228
+          "detail": "Responding in 467 ms",
+          "ms": 467
         }
       ]
     },
@@ -43,7 +43,7 @@
           "name": "Latest version published",
           "level": "operational",
           "detail": "specweave@3.1.14",
-          "ms": 661
+          "ms": 456
         }
       ]
     },
@@ -58,7 +58,7 @@
           "name": "Marketplace manifest",
           "level": "operational",
           "detail": "Version 3.1.14",
-          "ms": 208
+          "ms": 428
         }
       ]
     },
@@ -73,14 +73,14 @@
           "name": "Latest release",
           "level": "operational",
           "detail": "v1.0.103, published October 27, 2026",
-          "ms": 309
+          "ms": 491
         },
         {
           "id": "dmg",
           "name": "macOS installer (Apple silicon)",
           "level": "operational",
           "detail": "Download available",
-          "ms": 817
+          "ms": 739
         }
       ]
     },
@@ -94,15 +94,15 @@
           "id": "mac-feed",
           "name": "macOS update feed",
           "level": "operational",
-          "detail": "Responding in 695 ms",
-          "ms": 695
+          "detail": "Responding in 742 ms",
+          "ms": 742
         },
         {
           "id": "service-feed",
           "name": "Service update manifest",
           "level": "operational",
           "detail": "Version 1.0.103",
-          "ms": 671
+          "ms": 708
         }
       ]
     },
@@ -211,20 +211,20 @@
         {
           "id": "claude-ai",
           "name": "claude.ai",
-          "level": "partial_outage",
-          "detail": "partial outage"
+          "level": "operational",
+          "detail": null
         },
         {
           "id": "claude-api-api-anthropic-com-",
           "name": "Claude API (api.anthropic.com)",
-          "level": "partial_outage",
-          "detail": "partial outage"
+          "level": "operational",
+          "detail": null
         },
         {
           "id": "claude-code",
           "name": "Claude Code",
-          "level": "partial_outage",
-          "detail": "partial outage"
+          "level": "operational",
+          "detail": null
         }
       ]
     },
