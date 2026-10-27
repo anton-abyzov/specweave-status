@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-27T08:15:54.577Z",
+  "generatedAt": "2026-10-27T08:41:05.790Z",
   "level": "operational",
   "services": [
     {
@@ -13,8 +13,8 @@
           "id": "home",
           "name": "Home page",
           "level": "operational",
-          "detail": "Responding in 200 ms",
-          "ms": 200
+          "detail": "Responding in 209 ms",
+          "ms": 209
         },
         {
           "id": "docs",
@@ -27,8 +27,8 @@
           "id": "studio",
           "name": "SpecWithCode page",
           "level": "operational",
-          "detail": "Responding in 155 ms",
-          "ms": 155
+          "detail": "Responding in 157 ms",
+          "ms": 157
         }
       ]
     },
@@ -43,7 +43,7 @@
           "name": "Latest version published",
           "level": "operational",
           "detail": "specweave@3.1.14",
-          "ms": 191
+          "ms": 258
         }
       ]
     },
@@ -58,7 +58,7 @@
           "name": "Marketplace manifest",
           "level": "operational",
           "detail": "Version 3.1.14",
-          "ms": 111
+          "ms": 145
         }
       ]
     },
@@ -72,15 +72,15 @@
           "id": "release",
           "name": "Latest release",
           "level": "operational",
-          "detail": "v1.0.102, published October 27, 2026",
-          "ms": 208
+          "detail": "v1.0.103, published October 27, 2026",
+          "ms": 211
         },
         {
           "id": "dmg",
           "name": "macOS installer (Apple silicon)",
           "level": "operational",
           "detail": "Download available",
-          "ms": 341
+          "ms": 405
         }
       ]
     },
@@ -94,15 +94,15 @@
           "id": "mac-feed",
           "name": "macOS update feed",
           "level": "operational",
-          "detail": "Responding in 267 ms",
-          "ms": 267
+          "detail": "Responding in 310 ms",
+          "ms": 310
         },
         {
           "id": "service-feed",
           "name": "Service update manifest",
           "level": "operational",
-          "detail": "Version 1.0.102",
-          "ms": 295
+          "detail": "Version 1.0.103",
+          "ms": 316
         }
       ]
     },
