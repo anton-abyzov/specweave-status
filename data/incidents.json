@@ -258,11 +258,11 @@
       "serviceId": "claude",
       "title": "Elevated errors for Claude Sonnet 5.5",
       "level": "partial_outage",
-      "stage": "identified",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-10-27T15:09:08.926Z",
-      "updatedAt": "2026-10-27T15:09:09.162Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-10-27T15:57:52.714Z",
+      "resolvedAt": "2026-10-27T15:57:52.714Z",
       "url": "https://stspg.io/39x7qh3sd7bd"
     }
   ]
