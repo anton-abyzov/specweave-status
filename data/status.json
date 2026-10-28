@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T15:13:08.243Z",
-  "level": "degraded",
+  "generatedAt": "2026-10-28T15:22:04.105Z",
+  "level": "major_outage",
   "services": [
     {
       "id": "website",
@@ -13,22 +13,22 @@
           "id": "home",
           "name": "Home page",
           "level": "operational",
-          "detail": "Responding in 699 ms",
-          "ms": 699
+          "detail": "Responding in 742 ms",
+          "ms": 742
         },
         {
           "id": "docs",
           "name": "Documentation",
           "level": "operational",
-          "detail": "Responding in 665 ms",
-          "ms": 665
+          "detail": "Responding in 611 ms",
+          "ms": 611
         },
         {
           "id": "studio",
           "name": "SpecWithCode page",
           "level": "operational",
-          "detail": "Responding in 649 ms",
-          "ms": 649
+          "detail": "Responding in 645 ms",
+          "ms": 645
         }
       ]
     },
@@ -43,7 +43,7 @@
           "name": "Latest version published",
           "level": "operational",
           "detail": "specweave@3.1.15",
-          "ms": 268
+          "ms": 1678
         }
       ]
     },
@@ -58,7 +58,7 @@
           "name": "Marketplace manifest",
           "level": "operational",
           "detail": "Version 3.1.15",
-          "ms": 2993
+          "ms": 136
         }
       ]
     },
@@ -73,14 +73,14 @@
           "name": "Latest release",
           "level": "operational",
           "detail": "v1.0.109, published October 28, 2026",
-          "ms": 339
+          "ms": 318
         },
         {
           "id": "dmg",
           "name": "macOS installer (Apple silicon)",
           "level": "operational",
           "detail": "Download available",
-          "ms": 488
+          "ms": 609
         }
       ]
     },
@@ -94,22 +94,22 @@
           "id": "mac-feed",
           "name": "macOS update feed",
           "level": "operational",
-          "detail": "Responding in 474 ms",
-          "ms": 474
+          "detail": "Responding in 278 ms",
+          "ms": 278
         },
         {
           "id": "service-feed",
           "name": "Service update manifest",
           "level": "operational",
           "detail": "Version 1.0.109",
-          "ms": 489
+          "ms": 289
         }
       ]
     },
     {
       "id": "github",
       "name": "GitHub",
-      "level": "degraded",
+      "level": "major_outage",
       "detail": "Disruption with some Copilot services",
       "components": [
         {
