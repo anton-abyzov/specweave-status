@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T14:24:39.786Z",
+  "generatedAt": "2026-10-28T14:37:53.394Z",
   "level": "degraded",
   "services": [
     {
@@ -13,22 +13,22 @@
           "id": "home",
           "name": "Home page",
           "level": "operational",
-          "detail": "Responding in 240 ms",
-          "ms": 240
+          "detail": "Responding in 422 ms",
+          "ms": 422
         },
         {
           "id": "docs",
           "name": "Documentation",
           "level": "operational",
-          "detail": "Responding in 413 ms",
-          "ms": 413
+          "detail": "Responding in 327 ms",
+          "ms": 327
         },
         {
           "id": "studio",
           "name": "SpecWithCode page",
           "level": "operational",
-          "detail": "Responding in 236 ms",
-          "ms": 236
+          "detail": "Responding in 324 ms",
+          "ms": 324
         }
       ]
     },
@@ -43,7 +43,7 @@
           "name": "Latest version published",
           "level": "operational",
           "detail": "specweave@3.1.15",
-          "ms": 404
+          "ms": 276
         }
       ]
     },
@@ -58,7 +58,7 @@
           "name": "Marketplace manifest",
           "level": "operational",
           "detail": "Version 3.1.15",
-          "ms": 213
+          "ms": 259
         }
       ]
     },
@@ -73,14 +73,14 @@
           "name": "Latest release",
           "level": "operational",
           "detail": "v1.0.109, published October 28, 2026",
-          "ms": 356
+          "ms": 385
         },
         {
           "id": "dmg",
           "name": "macOS installer (Apple silicon)",
           "level": "operational",
           "detail": "Download available",
-          "ms": 455
+          "ms": 750
         }
       ]
     },
@@ -94,15 +94,15 @@
           "id": "mac-feed",
           "name": "macOS update feed",
           "level": "operational",
-          "detail": "Responding in 437 ms",
-          "ms": 437
+          "detail": "Responding in 754 ms",
+          "ms": 754
         },
         {
           "id": "service-feed",
           "name": "Service update manifest",
           "level": "operational",
           "detail": "Version 1.0.109",
-          "ms": 446
+          "ms": 865
         }
       ]
     },
@@ -151,14 +151,14 @@
       "detail": "All tracked components operational.",
       "components": [
         {
-          "id": "authoritative-dns",
-          "name": "Authoritative DNS",
+          "id": "cdn-cache",
+          "name": "CDN/Cache",
           "level": "operational",
           "detail": null
         },
         {
-          "id": "cdn-cache",
-          "name": "CDN/Cache",
+          "id": "authoritative-dns",
+          "name": "Authoritative DNS",
           "level": "operational",
           "detail": null
         },
