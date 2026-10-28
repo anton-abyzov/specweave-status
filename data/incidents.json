@@ -282,11 +282,11 @@
       "serviceId": "github",
       "title": "Disruption with some Copilot services",
       "level": "major_outage",
-      "stage": "investigating",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-10-28T14:12:53.814Z",
-      "updatedAt": "2026-10-28T15:15:25.875Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-10-28T15:32:06.832Z",
+      "resolvedAt": "2026-10-28T15:32:06.832Z",
       "url": "https://stspg.io/bwcyq078jzms"
     }
   ]
