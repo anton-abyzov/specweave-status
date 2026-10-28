@@ -288,6 +288,18 @@
       "updatedAt": "2026-10-28T15:32:06.832Z",
       "resolvedAt": "2026-10-28T15:32:06.832Z",
       "url": "https://stspg.io/bwcyq078jzms"
+    },
+    {
+      "id": "claude:phg1y2yh07n2",
+      "serviceId": "claude",
+      "title": "Elevated errors affecting the Google Calendar connector",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-10-28T16:19:09.935Z",
+      "updatedAt": "2026-10-28T16:19:10.243Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/75qq31h8672d"
     }
   ]
 }
