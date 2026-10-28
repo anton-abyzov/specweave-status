@@ -294,11 +294,11 @@
       "serviceId": "claude",
       "title": "Elevated errors affecting the Google Calendar connector",
       "level": "degraded",
-      "stage": "monitoring",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-10-28T16:19:09.935Z",
-      "updatedAt": "2026-10-28T19:47:31.741Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-10-28T20:09:32.252Z",
+      "resolvedAt": "2026-10-28T20:09:32.252Z",
       "url": "https://stspg.io/75qq31h8672d"
     }
   ]
