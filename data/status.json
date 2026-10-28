@@ -1,34 +1,34 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T07:37:16.253Z",
-  "level": "operational",
+  "generatedAt": "2026-10-28T07:45:31.813Z",
+  "level": "degraded",
   "services": [
     {
       "id": "website",
       "name": "spec-weave.com",
-      "level": "operational",
-      "detail": "All 3 checks passing",
+      "level": "degraded",
+      "detail": "SpecWithCode page: Slow response (12468 ms)",
       "components": [
         {
           "id": "home",
           "name": "Home page",
           "level": "operational",
-          "detail": "Responding in 219 ms",
-          "ms": 219
+          "detail": "Responding in 318 ms",
+          "ms": 318
         },
         {
           "id": "docs",
           "name": "Documentation",
           "level": "operational",
-          "detail": "Responding in 194 ms",
-          "ms": 194
+          "detail": "Responding in 197 ms",
+          "ms": 197
         },
         {
           "id": "studio",
           "name": "SpecWithCode page",
-          "level": "operational",
-          "detail": "Responding in 175 ms",
-          "ms": 175
+          "level": "degraded",
+          "detail": "Slow response (12468 ms)",
+          "ms": 12468
         }
       ]
     },
@@ -43,7 +43,7 @@
           "name": "Latest version published",
           "level": "operational",
           "detail": "specweave@3.1.15",
-          "ms": 213
+          "ms": 889
         }
       ]
     },
@@ -58,7 +58,7 @@
           "name": "Marketplace manifest",
           "level": "operational",
           "detail": "Version 3.1.15",
-          "ms": 186
+          "ms": 153
         }
       ]
     },
@@ -73,14 +73,14 @@
           "name": "Latest release",
           "level": "operational",
           "detail": "v1.0.107, published October 28, 2026",
-          "ms": 339
+          "ms": 252
         },
         {
           "id": "dmg",
           "name": "macOS installer (Apple silicon)",
           "level": "operational",
           "detail": "Download available",
-          "ms": 497
+          "ms": 564
         }
       ]
     },
@@ -94,15 +94,15 @@
           "id": "mac-feed",
           "name": "macOS update feed",
           "level": "operational",
-          "detail": "Responding in 462 ms",
-          "ms": 462
+          "detail": "Responding in 223 ms",
+          "ms": 223
         },
         {
           "id": "service-feed",
           "name": "Service update manifest",
           "level": "operational",
           "detail": "Version 1.0.107",
-          "ms": 493
+          "ms": 550
         }
       ]
     },
