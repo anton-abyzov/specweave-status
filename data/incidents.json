@@ -276,6 +276,18 @@
       "updatedAt": "2026-10-28T05:53:15.111Z",
       "resolvedAt": "2026-10-28T05:53:15.111Z",
       "url": "https://stspg.io/j86c100s8tqm"
+    },
+    {
+      "id": "github:l7ycmglmykgg",
+      "serviceId": "github",
+      "title": "Disruption with some Copilot services",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-10-28T14:12:53.814Z",
+      "updatedAt": "2026-10-28T14:15:46.578Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/bwcyq078jzms"
     }
   ]
 }
