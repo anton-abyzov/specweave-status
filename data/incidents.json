@@ -264,6 +264,18 @@
       "updatedAt": "2026-10-27T15:57:52.714Z",
       "resolvedAt": "2026-10-27T15:57:52.714Z",
       "url": "https://stspg.io/39x7qh3sd7bd"
+    },
+    {
+      "id": "claude:9ftx658xtd5z",
+      "serviceId": "claude",
+      "title": "Elevated errors affecting the Gmail connector",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-10-28T03:59:32.227Z",
+      "updatedAt": "2026-10-28T04:06:55.352Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/j86c100s8tqm"
     }
   ]
 }

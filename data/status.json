@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-28T03:56:36.108Z",
-  "level": "operational",
+  "generatedAt": "2026-10-28T04:16:19.588Z",
+  "level": "degraded",
   "services": [
     {
       "id": "website",
@@ -13,22 +13,22 @@
           "id": "home",
           "name": "Home page",
           "level": "operational",
-          "detail": "Responding in 363 ms",
-          "ms": 363
+          "detail": "Responding in 237 ms",
+          "ms": 237
         },
         {
           "id": "docs",
           "name": "Documentation",
           "level": "operational",
-          "detail": "Responding in 296 ms",
-          "ms": 296
+          "detail": "Responding in 183 ms",
+          "ms": 183
         },
         {
           "id": "studio",
           "name": "SpecWithCode page",
           "level": "operational",
-          "detail": "Responding in 323 ms",
-          "ms": 323
+          "detail": "Responding in 183 ms",
+          "ms": 183
         }
       ]
     },
@@ -43,7 +43,7 @@
           "name": "Latest version published",
           "level": "operational",
           "detail": "specweave@3.1.15",
-          "ms": 1129
+          "ms": 216
         }
       ]
     },
@@ -58,7 +58,7 @@
           "name": "Marketplace manifest",
           "level": "operational",
           "detail": "Version 3.1.15",
-          "ms": 210
+          "ms": 177
         }
       ]
     },
@@ -72,15 +72,15 @@
           "id": "release",
           "name": "Latest release",
           "level": "operational",
-          "detail": "v1.0.105, published October 27, 2026",
-          "ms": 369
+          "detail": "v1.0.106, published October 28, 2026",
+          "ms": 243
         },
         {
           "id": "dmg",
           "name": "macOS installer (Apple silicon)",
           "level": "operational",
           "detail": "Download available",
-          "ms": 647
+          "ms": 527
         }
       ]
     },
@@ -94,15 +94,15 @@
           "id": "mac-feed",
           "name": "macOS update feed",
           "level": "operational",
-          "detail": "Responding in 610 ms",
-          "ms": 610
+          "detail": "Responding in 372 ms",
+          "ms": 372
         },
         {
           "id": "service-feed",
           "name": "Service update manifest",
           "level": "operational",
-          "detail": "Version 1.0.105",
-          "ms": 553
+          "detail": "Version 1.0.106",
+          "ms": 483
         }
       ]
     },
@@ -205,14 +205,14 @@
     {
       "id": "claude",
       "name": "Claude",
-      "level": "operational",
-      "detail": "All tracked components operational.",
+      "level": "degraded",
+      "detail": "Elevated errors affecting the Gmail connector",
       "components": [
         {
           "id": "claude-ai",
           "name": "claude.ai",
-          "level": "operational",
-          "detail": null
+          "level": "degraded",
+          "detail": "degraded performance"
         },
         {
           "id": "claude-api-api-anthropic-com-",
@@ -223,8 +223,8 @@
         {
           "id": "claude-code",
           "name": "Claude Code",
-          "level": "operational",
-          "detail": null
+          "level": "degraded",
+          "detail": "degraded performance"
         }
       ]
     },
