@@ -306,10 +306,10 @@
       "serviceId": "github",
       "title": "Disruption with Copilot Cloud services",
       "level": "degraded",
-      "stage": "investigating",
+      "stage": "monitoring",
       "origin": "upstream",
       "startedAt": "2026-10-29T10:19:55.313Z",
-      "updatedAt": "2026-10-29T11:37:53.433Z",
+      "updatedAt": "2026-10-29T12:33:32.205Z",
       "resolvedAt": null,
       "url": "https://stspg.io/22p3vp78z20q"
     }
