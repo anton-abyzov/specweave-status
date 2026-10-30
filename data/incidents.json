@@ -324,6 +324,18 @@
       "updatedAt": "2026-10-30T15:08:41.260Z",
       "resolvedAt": "2026-10-30T15:08:41.260Z",
       "url": "https://stspg.io/6p81rf34z4nc"
+    },
+    {
+      "id": "github:pwxsjgnvrk6b",
+      "serviceId": "github",
+      "title": "Incident with Actions, Pages, and Webhooks",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-10-30T17:50:54.670Z",
+      "updatedAt": "2026-10-30T17:50:54.787Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/5cd2m4n59spv"
     }
   ]
 }
