@@ -318,11 +318,11 @@
       "serviceId": "github",
       "title": "Disruption with GitHub services",
       "level": "major_outage",
-      "stage": "monitoring",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-10-30T14:31:16.529Z",
-      "updatedAt": "2026-10-30T14:49:46.415Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-10-30T15:08:41.260Z",
+      "resolvedAt": "2026-10-30T15:08:41.260Z",
       "url": "https://stspg.io/6p81rf34z4nc"
     }
   ]
