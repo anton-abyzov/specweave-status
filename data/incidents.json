@@ -330,11 +330,11 @@
       "serviceId": "github",
       "title": "Incident with Actions, Pages, and Webhooks",
       "level": "partial_outage",
-      "stage": "monitoring",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-10-30T17:50:54.670Z",
-      "updatedAt": "2026-10-30T18:32:39.862Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-10-30T19:34:15.763Z",
+      "resolvedAt": "2026-10-30T19:34:15.763Z",
       "url": "https://stspg.io/5cd2m4n59spv"
     }
   ]
