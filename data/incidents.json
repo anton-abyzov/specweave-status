@@ -317,11 +317,11 @@
       "id": "github:nxy2l0ssxm10",
       "serviceId": "github",
       "title": "Disruption with GitHub services",
-      "level": "degraded",
+      "level": "major_outage",
       "stage": "investigating",
       "origin": "upstream",
       "startedAt": "2026-10-30T14:31:16.529Z",
-      "updatedAt": "2026-10-30T14:31:16.608Z",
+      "updatedAt": "2026-10-30T14:39:42.883Z",
       "resolvedAt": null,
       "url": "https://stspg.io/6p81rf34z4nc"
     }
