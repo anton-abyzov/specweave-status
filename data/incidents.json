@@ -312,6 +312,18 @@
       "updatedAt": "2026-10-29T12:54:29.636Z",
       "resolvedAt": "2026-10-29T12:54:29.636Z",
       "url": "https://stspg.io/22p3vp78z20q"
+    },
+    {
+      "id": "github:nxy2l0ssxm10",
+      "serviceId": "github",
+      "title": "Disruption with GitHub services",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-10-30T14:31:16.529Z",
+      "updatedAt": "2026-10-30T14:31:16.608Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/6p81rf34z4nc"
     }
   ]
 }
