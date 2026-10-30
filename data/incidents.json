@@ -342,10 +342,10 @@
       "serviceId": "github",
       "title": "Incident with Dependabot",
       "level": "degraded",
-      "stage": "investigating",
+      "stage": "monitoring",
       "origin": "upstream",
       "startedAt": "2026-10-30T20:59:14.215Z",
-      "updatedAt": "2026-10-30T21:44:52.905Z",
+      "updatedAt": "2026-10-30T22:32:14.197Z",
       "resolvedAt": null,
       "url": "https://stspg.io/5bh6qnzn76tk"
     }
