@@ -329,11 +329,11 @@
       "id": "github:pwxsjgnvrk6b",
       "serviceId": "github",
       "title": "Incident with Actions, Pages, and Webhooks",
-      "level": "degraded",
+      "level": "partial_outage",
       "stage": "investigating",
       "origin": "upstream",
       "startedAt": "2026-10-30T17:50:54.670Z",
-      "updatedAt": "2026-10-30T17:50:54.787Z",
+      "updatedAt": "2026-10-30T18:06:21.714Z",
       "resolvedAt": null,
       "url": "https://stspg.io/5cd2m4n59spv"
     }
