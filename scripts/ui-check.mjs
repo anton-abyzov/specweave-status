@@ -69,16 +69,24 @@ try {
     await page.locator('#main[aria-busy="false"]').waitFor();
     assert.equal(await page.locator('html').getAttribute('data-theme'), theme);
     assert.equal(await page.locator('#banner').getAttribute('data-level'), 'degraded');
-    assert.match(await page.locator('#banner-title').textContent(), /SpecWeave is operational/);
-    assert.deepEqual(await page.locator('section.card[data-group-id]').evaluateAll((n) => n.map((x) => x.dataset.groupId)), ['specweave', 'specwithcode', 'dependencies']);
+    assert.match(await page.locator('#banner-title').textContent(), /Our services are operational/);
+    assert.deepEqual(await page.locator('section.card[data-group-id]').evaluateAll((n) => n.map((x) => x.dataset.groupId)), ['specwithcode', 'vskill', 'specweave', 'dependencies']);
     assert.equal(await page.locator('[data-service-id="website"] .bar').count(), 90);
     assert.equal(await page.locator('[data-service-id="website"] .bar').nth(77).getAttribute('data-level'), 'major_outage');
     assert.equal(await page.locator('[data-service-id="downloads"] .bar').nth(49).getAttribute('data-level'), 'degraded');
-    const incidentsText = await page.locator('#incidents').textContent();
-    assert.match(incidentsText, /Delays in GitHub Pages builds/);
-    assert.match(incidentsText, /Home page: Connection failed/);
-    assert.match(incidentsText, /Resolved/);
-    // GitHub is degraded, so it opens with components, dependents and source.
+    assert.match(await page.locator('#incidents').textContent(), /Delays in GitHub Pages builds/);
+    // Past incidents start collapsed, grouped by day.
+    const past = page.locator('#past');
+    assert.equal(await past.locator('.past-day').count(), 0);
+    assert.doesNotMatch(await past.textContent(), /null|undefined/);
+    await past.locator('.group-head').click();
+    await past.locator('.day-toggle').first().click();
+    assert.match(await past.textContent(), /Home page: Connection failed/);
+    assert.match(await past.textContent(), /Resolved/);
+    // Providers start collapsed; GitHub is degraded, so it opens with components, dependents and source.
+    assert.equal(await page.locator('[data-service-id="github"]').count(), 0);
+    await page.locator('[data-group-id="dependencies"] .group-head').click();
+    assert.equal(await page.locator('[data-service-id="github"]').count(), 1);
     const githubRow = page.locator('[data-service-id="github"]');
     assert.match(await githubRow.textContent(), /Used by.*spec-weave\.com \(GitHub Pages\)/);
     assert.match(await githubRow.textContent(), /githubstatus\.com/);
@@ -96,6 +104,19 @@ try {
     await page.locator('[data-group-id="dependencies"] .group-head').click();
     assert.equal(await page.locator('[data-service-id="github"]').count(), 0);
     await context.close();
+
+    const phone = await browser.newContext({ colorScheme: theme, viewport: { width: 390, height: 1400 }, reducedMotion: 'reduce' });
+    const mobile = await phone.newPage();
+    mobile.on('pageerror', (e) => errors.push(String(e)));
+    await mobile.route('**/*', (route) => (route.request().url().startsWith(origin) ? route.continue() : route.abort()));
+    await mobile.goto(origin);
+    await mobile.locator('#main[aria-busy="false"]').waitFor();
+    assert.equal(await mobile.locator('[data-service-id="website"] .bar').count(), 30);
+    // The outage 12 days ago is inside the 30 shown days; the one 40 days ago is not.
+    assert.match(await mobile.locator('[data-service-id="downloads"] .bar-uptime').textContent(), /^100% uptime$/);
+    assert.ok(await mobile.evaluate(() => document.documentElement.scrollWidth <= innerWidth), 'no horizontal scroll on phones');
+    await mobile.screenshot({ path: join(output, `status-${theme}-phone.png`), fullPage: true });
+    await phone.close();
   }
   assert.deepEqual(errors, []);
   console.log(`ui-check passed; screenshots in ${output}`);

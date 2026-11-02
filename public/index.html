@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>SpecWeave Status</title>
-    <meta name="description" content="Live status of spec-weave.com, the specweave npm package, SpecWithCode downloads and updates, and the services they depend on." />
+    <meta name="description" content="Live status of SpecWithCode (Connect, sign-in, website, downloads, updates), vskill (verified-skill.com, API, registry, crawl workers) and the SpecWeave CLI." />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" href="style.css" />
     <script>
@@ -37,13 +37,14 @@
         </div>
       </section>
       <section id="incidents" class="card" hidden>
-        <h2 class="card-title">Incidents</h2>
+        <h2 class="card-title">Open incidents</h2>
         <ul id="incident-list" class="rows"></ul>
       </section>
       <div id="groups"></div>
+      <section id="past" class="card" hidden></section>
       <p class="muted small footnote">
         Checks run every 10 minutes from GitHub Actions. Each bar is one UTC day in the worst status seen
-        that day; a single failed check among many shows as Needs attention. Dependencies combine their
+        that day; a single failed check among many shows as Needs attention. Providers combine their
         public status pages. Raw data: <a href="data/status.json">status.json</a>,
         <a href="data/history.json">history.json</a>, <a href="data/incidents.json">incidents.json</a>.
       </p>

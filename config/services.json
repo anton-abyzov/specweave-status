@@ -1,44 +1,44 @@
 {
   "schemaVersion": 1,
   "groups": [
-    { "id": "specweave", "name": "SpecWeave", "description": "Website, docs and the npm package" },
-    { "id": "specwithcode", "name": "SpecWithCode", "description": "Desktop app downloads and updates" },
-    { "id": "dependencies", "name": "Dependencies", "description": "Services SpecWeave and SpecWithCode rely on" }
+    { "id": "specwithcode", "name": "SpecWithCode", "description": "Connect, sign-in, website, downloads and updates" },
+    { "id": "vskill", "name": "vskill", "description": "verified-skill.com, its API, the skill registry and crawlers" },
+    { "id": "specweave", "name": "SpecWeave CLI", "description": "The npm package and the Claude Code plugin" },
+    { "id": "dependencies", "name": "Providers", "description": "Third-party services ours run on", "collapsed": true }
   ],
   "services": [
     {
+      "id": "connect",
+      "group": "specwithcode",
+      "name": "Connect relay",
+      "description": "Phone and remote access to your machines",
+      "dependsOn": ["cloudflare"],
+      "usedBy": ["SpecWithCode on iPhone", "Threads on paired machines", "Fleet updates over Connect"],
+      "checks": [
+        { "id": "relay", "name": "Relay", "kind": "json", "url": "https://relay.spec-weave.com/health", "expectTrue": ["ok"] }
+      ]
+    },
+    {
+      "id": "signin",
+      "group": "specwithcode",
+      "name": "Sign-in",
+      "description": "Sign in with Google or Apple",
+      "usedBy": ["Connect sign-in in the desktop app", "SpecWithCode on iPhone"],
+      "checks": [
+        { "id": "clerk", "name": "Sign-in service", "kind": "json", "url": "https://clerk.spec-weave.com/v1/environment", "expectTrue": ["user_settings.social.oauth_google.enabled", "user_settings.social.oauth_apple.enabled"], "okDetail": "Google and Apple sign-in available" }
+      ]
+    },
+    {
       "id": "website",
-      "group": "specweave",
-      "name": "spec-weave.com",
-      "description": "The public website and documentation",
+      "group": "specwithcode",
+      "name": "Website and docs",
+      "description": "spec-weave.com and its documentation",
       "dependsOn": ["github", "cloudflare"],
       "usedBy": ["Docs and guides", "SpecWithCode download page", "This status page's links"],
       "checks": [
         { "id": "home", "name": "Home page", "kind": "http", "url": "https://spec-weave.com/", "expect": "SpecWeave" },
         { "id": "docs", "name": "Documentation", "kind": "http", "url": "https://spec-weave.com/docs/overview/introduction/", "expect": "SpecWeave" },
         { "id": "studio", "name": "SpecWithCode page", "kind": "http", "url": "https://spec-weave.com/code/", "expect": "SpecWithCode" }
-      ]
-    },
-    {
-      "id": "npm-package",
-      "group": "specweave",
-      "name": "npm package",
-      "description": "`npm install -g specweave` and `specweave update`",
-      "dependsOn": ["npm"],
-      "usedBy": ["Installing the specweave CLI", "specweave update", "CI pipelines that install specweave"],
-      "checks": [
-        { "id": "latest", "name": "Latest version published", "kind": "npm", "url": "https://registry.npmjs.org/specweave/latest" }
-      ]
-    },
-    {
-      "id": "plugin",
-      "group": "specweave",
-      "name": "Claude Code plugin",
-      "description": "The sw plugin marketplace on GitHub",
-      "dependsOn": ["github"],
-      "usedBy": ["/plugin install sw", "Plugin updates in Claude Code"],
-      "checks": [
-        { "id": "marketplace", "name": "Marketplace manifest", "kind": "json", "url": "https://raw.githubusercontent.com/anton-abyzov/specweave/develop/.claude-plugin/marketplace.json", "expectKey": "plugins" }
       ]
     },
     {
@@ -66,6 +66,73 @@
       ]
     },
     {
+      "id": "vskill-platform",
+      "group": "vskill",
+      "name": "verified-skill.com",
+      "description": "The skill catalog website",
+      "dependsOn": ["cloudflare"],
+      "usedBy": ["Browsing and installing skills", "Skill security reports"],
+      "checks": [
+        { "id": "home", "name": "Home page", "kind": "http", "url": "https://verified-skill.com/", "expect": "<html" }
+      ]
+    },
+    {
+      "id": "vskill-api",
+      "group": "vskill",
+      "name": "API",
+      "description": "The public verified-skill.com API",
+      "dependsOn": ["cloudflare"],
+      "usedBy": ["vskill CLI", "Skill Studio", "SpecWithCode skill search"],
+      "checks": [
+        { "id": "skills", "name": "Skill listing", "kind": "json", "url": "https://verified-skill.com/api/v1/skills?limit=1", "expectKey": "skills" },
+        { "id": "stats", "name": "Catalog stats", "kind": "json", "url": "https://verified-skill.com/api/v1/stats", "expectKey": "totalSkills" }
+      ]
+    },
+    {
+      "id": "vskill-registry",
+      "group": "vskill",
+      "name": "Skill registry",
+      "description": "Skill lookup and search behind `vskill install`",
+      "dependsOn": ["cloudflare"],
+      "usedBy": ["vskill install", "vskill find", "Skill Studio search"],
+      "checks": [
+        { "id": "lookup", "name": "Skill lookup", "kind": "json", "url": "https://verified-skill.com/api/v1/skills/anthropics/skills/pdf", "expectKey": "skill" },
+        { "id": "search", "name": "Search", "kind": "json", "url": "https://verified-skill.com/api/v1/studio/search?q=pdf", "expectKey": "results" }
+      ]
+    },
+    {
+      "id": "crawl-workers",
+      "group": "vskill",
+      "name": "Crawl workers",
+      "description": "Discover and submit new skills for scanning",
+      "usedBy": ["New skills appearing on verified-skill.com"],
+      "checks": [
+        { "id": "workers", "name": "Workers", "kind": "workers", "urlsEnv": "CRAWL_WORKER_URLS" }
+      ]
+    },
+    {
+      "id": "npm-package",
+      "group": "specweave",
+      "name": "npm package",
+      "description": "`npm install -g specweave` and `specweave update`",
+      "dependsOn": ["npm"],
+      "usedBy": ["Installing the specweave CLI", "specweave update", "CI pipelines that install specweave"],
+      "checks": [
+        { "id": "latest", "name": "Latest version published", "kind": "npm", "url": "https://registry.npmjs.org/specweave/latest" }
+      ]
+    },
+    {
+      "id": "plugin",
+      "group": "specweave",
+      "name": "Claude Code plugin",
+      "description": "The sw plugin marketplace on GitHub",
+      "dependsOn": ["github"],
+      "usedBy": ["/plugin install sw", "Plugin updates in Claude Code"],
+      "checks": [
+        { "id": "marketplace", "name": "Marketplace manifest", "kind": "json", "url": "https://raw.githubusercontent.com/anton-abyzov/specweave/develop/.claude-plugin/marketplace.json", "expectKey": "plugins" }
+      ]
+    },
+    {
       "id": "github",
       "group": "dependencies",
       "name": "GitHub",
@@ -77,8 +144,8 @@
       "id": "cloudflare",
       "group": "dependencies",
       "name": "Cloudflare",
-      "description": "DNS and CDN in front of spec-weave.com",
-      "usedBy": ["spec-weave.com DNS and caching", "status.spec-weave.com DNS"],
+      "description": "DNS, CDN and Workers behind our sites",
+      "usedBy": ["spec-weave.com DNS and caching", "Connect relay", "verified-skill.com hosting", "status.spec-weave.com DNS"],
       "feed": { "kind": "statuspage", "url": "https://www.cloudflarestatus.com/api/v2/summary.json", "page": "https://www.cloudflarestatus.com", "components": ["CDN/Cache", "Authoritative DNS", "SSL Certificate Provisioning", "DNS Updates"], "ignoreUnlisted": true }
     },
     {

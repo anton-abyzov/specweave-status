@@ -1,11 +1,16 @@
 import { LABELS, headline, rollupKnown, serviceDays, uptime } from './model.mjs';
 
+// Scheduled runs often start 10-30 minutes late, so allow a few missed rounds.
 const STALE_MS = 45 * 60 * 1000;
+const PHONE = matchMedia('(max-width: 640px)');
 const REFRESH_MS = 2 * 60 * 1000;
+const PAST_MS = 14 * 86400000;
 const STAGES = { investigating: 'Investigating', identified: 'Identified', monitoring: 'Monitoring', resolved: 'Resolved' };
 const $ = (selector) => document.querySelector(selector);
 const expanded = new Set();
 const collapsedGroups = new Set();
+let pastOpen = false;
+const openDays = new Set();
 
 function el(tag, attrs = {}, ...children) {
   const node = document.createElement(tag);
@@ -67,7 +72,8 @@ function hidePopover() {
   document.querySelectorAll('.bar.active').forEach((node) => node.classList.remove('active'));
 }
 
-function dayBars(service, days, incidents) {
+function dayBars(service, allDays, incidents, percent) {
+  const days = PHONE.matches ? allDays.slice(-30) : allDays;
   const own = incidents.filter((i) => i.serviceId === service.id);
   let active = days.length - 1;
   const bars = days.map((day, index) =>
@@ -95,12 +101,13 @@ function dayBars(service, days, incidents) {
     },
     bars,
   );
-  return [strip, el('div', { class: 'bar-labels' }, el('span', {}, `${days.length} days ago`), el('span', {}, 'Today'))];
+  const uptimeLabel = percent === null ? 'No data yet' : `${percent >= 99.995 ? '100' : percent.toFixed(2)}% uptime`;
+  return [strip, el('div', { class: 'bar-labels' }, el('span', {}, `${days.length} days ago`), el('span', { class: 'bar-uptime' }, uptimeLabel), el('span', {}, 'Today'))];
 }
 
 function serviceRow(definition, service, history, incidents, now, servicesById) {
   const days = serviceDays(history, definition.id, now);
-  const percent = uptime(history, definition.id, now);
+  const percent = uptime(history, definition.id, now, PHONE.matches ? 30 : undefined);
   const open = expanded.has(definition.id);
   const panelId = `panel-${definition.id}`;
   const dependsOn = (definition.dependsOn ?? []).map((id) => servicesById.get(id)).filter(Boolean);
@@ -122,10 +129,9 @@ function serviceRow(definition, service, history, incidents, now, servicesById) 
         el('span', { class: 'chevron', 'aria-hidden': 'true' }, '›'),
         el('span', { class: 'grow' }, el('div', { class: 'service-name' }, definition.name), el('div', { class: 'service-detail' }, service?.detail ?? definition.description)),
       ),
-      el('span', { class: 'uptime' }, percent === null ? 'No data yet' : `${percent >= 99.995 ? '100' : percent.toFixed(2)}% uptime`),
       chip(service?.level ?? 'unknown'),
     ),
-    dayBars(definition, days, incidents),
+    dayBars(definition, days, incidents, percent),
     open
       ? el(
           'div',
@@ -145,6 +151,19 @@ function serviceRow(definition, service, history, incidents, now, servicesById) 
         )
       : null,
   );
+}
+
+/** Resolved incidents by the viewer's local day, newest first; the same service and title on one day fold into one row. */
+function pastDays(resolved) {
+  const days = new Map();
+  for (const incident of [...resolved].sort((a, b) => b.resolvedAt.localeCompare(a.resolvedAt))) {
+    const date = new Date(incident.resolvedAt).toLocaleDateString(undefined, { month: 'long', day: 'numeric', year: 'numeric' });
+    const items = days.get(date) ?? days.set(date, []).get(date);
+    const same = items.find((item) => item.incident.serviceId === incident.serviceId && item.incident.title === incident.title);
+    if (same) same.repeats += 1;
+    else items.push({ incident, repeats: 1 });
+  }
+  return [...days].map(([date, items]) => ({ date, items }));
 }
 
 let state = null;
@@ -167,18 +186,36 @@ function render() {
     ? `Last checked ${age(status.generatedAt, now)} · ${timeLabel(status.generatedAt)}${stale ? ' · checks are delayed; this may be out of date' : ''}`
     : 'The first check has not run yet.';
 
-  const sorted = [...incidents].sort((a, b) => (!a.resolvedAt !== !b.resolvedAt ? (a.resolvedAt ? 1 : -1) : (b.resolvedAt ?? b.updatedAt).localeCompare(a.resolvedAt ?? a.updatedAt)));
-  const visible = [...sorted.filter((i) => !i.resolvedAt), ...sorted.filter((i) => i.resolvedAt).slice(0, 10)];
-  $('#incidents').hidden = visible.length === 0;
-  $('#incident-list').replaceChildren(...visible.map((i) =>
+  const serviceName = (id) => config.services.find((s) => s.id === id)?.name ?? id;
+  const incidentRow = (i, repeats = 1) =>
     el('li', { class: 'incident' },
       chip(i.resolvedAt ? 'operational' : i.level),
       el('div', { class: 'grow' },
-        el('div', { class: 'incident-title' }, i.title),
+        el('div', { class: 'incident-title' }, i.title, repeats > 1 ? el('span', { class: 'repeat' }, ` ×${repeats}`) : null),
         el('div', { class: 'incident-meta' },
-          `${config.services.find((s) => s.id === i.serviceId)?.name ?? i.serviceId} · ${i.origin === 'upstream' ? 'Upstream status page' : 'Detected by our checks'} · ${i.resolvedAt ? `Resolved ${timeLabel(i.resolvedAt)}` : `Started ${timeLabel(i.startedAt)}`}`,
+          `${serviceName(i.serviceId)} · ${i.origin === 'upstream' ? 'Upstream status page' : 'Detected by our checks'} · ${i.resolvedAt ? `Resolved ${timeLabel(i.resolvedAt)}` : `Started ${timeLabel(i.startedAt)}`}`,
           i.url ? [' · ', el('a', { href: i.url, rel: 'noreferrer' }, 'Details')] : null)),
-      el('span', { class: `stage${i.resolvedAt ? '' : ' open'}` }, STAGES[i.stage] ?? 'Investigating'))));
+      el('span', { class: `stage${i.resolvedAt ? '' : ' open'}` }, STAGES[i.stage] ?? 'Investigating'));
+  const open = incidents.filter((i) => !i.resolvedAt).sort((a, b) => b.startedAt.localeCompare(a.startedAt));
+  const past = pastDays(incidents.filter((i) => i.resolvedAt && now - Date.parse(i.resolvedAt) <= PAST_MS));
+  $('#incidents').hidden = open.length === 0;
+  $('#incident-list').replaceChildren(...open.map((i) => incidentRow(i)));
+  $('#past').hidden = past.length === 0;
+  const count = past.reduce((sum, day) => sum + day.items.reduce((n, item) => n + item.repeats, 0), 0);
+  $('#past').replaceChildren(
+    el('button', { class: 'group-head', type: 'button', 'aria-expanded': String(pastOpen), onclick: () => { pastOpen = !pastOpen; render(); } },
+      el('span', { class: 'chevron', 'aria-hidden': 'true' }, '›'),
+      el('span', { class: 'grow' }, el('div', { class: 'group-name' }, 'Past incidents'), el('div', { class: 'muted small' }, `${count} in the last 14 days`))),
+    ...(pastOpen ? [el('ul', { class: 'rows' }, past.map((day) => {
+          const dayOpen = openDays.has(day.date);
+          return el('li', { class: 'past-day' },
+            el('button', { class: 'day-toggle', type: 'button', 'aria-expanded': String(dayOpen), onclick: () => { dayOpen ? openDays.delete(day.date) : openDays.add(day.date); render(); } },
+              el('span', { class: 'chevron', 'aria-hidden': 'true' }, '›'),
+              el('span', { class: 'grow' }, day.date),
+              el('span', { class: 'muted small' }, `${day.items.length} incident${day.items.length === 1 ? '' : 's'}`)),
+            dayOpen ? el('ul', { class: 'rows' }, day.items.map((item) => incidentRow(item.incident, item.repeats))) : null);
+        }))] : []),
+  );
 
   $('#groups').replaceChildren(...config.groups.map((group) => {
     const members = config.services.filter((s) => s.group === group.id);
@@ -211,6 +248,7 @@ async function load() {
     return;
   }
   if (!state) {
+    for (const group of config.groups) if (group.collapsed) collapsedGroups.add(group.id);
     // Services with trouble start expanded so their components are visible.
     for (const s of status?.services ?? []) if (!['operational', 'unknown'].includes(s.level)) expanded.add(s.id);
   }
@@ -229,4 +267,5 @@ toggle.addEventListener('click', () => {
 syncToggle();
 addEventListener('scroll', hidePopover, { passive: true });
 await load();
+PHONE.addEventListener('change', render);
 setInterval(() => { if (document.visibilityState === 'visible') load(); }, REFRESH_MS);
