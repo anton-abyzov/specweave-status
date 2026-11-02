@@ -1,11 +1,41 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-02T02:55:52.663Z",
+  "generatedAt": "2026-11-02T02:59:26.109Z",
   "level": "operational",
   "services": [
     {
+      "id": "connect",
+      "name": "Connect relay",
+      "level": "operational",
+      "detail": "Responding in 859 ms",
+      "components": [
+        {
+          "id": "relay",
+          "name": "Relay",
+          "level": "operational",
+          "detail": "Responding in 859 ms",
+          "ms": 859
+        }
+      ]
+    },
+    {
+      "id": "signin",
+      "name": "Sign-in",
+      "level": "operational",
+      "detail": "Google and Apple sign-in available",
+      "components": [
+        {
+          "id": "clerk",
+          "name": "Sign-in service",
+          "level": "operational",
+          "detail": "Google and Apple sign-in available",
+          "ms": 709
+        }
+      ]
+    },
+    {
       "id": "website",
-      "name": "spec-weave.com",
+      "name": "Website and docs",
       "level": "operational",
       "detail": "All 3 checks passing",
       "components": [
@@ -13,52 +43,22 @@
           "id": "home",
           "name": "Home page",
           "level": "operational",
-          "detail": "Responding in 637 ms",
-          "ms": 637
+          "detail": "Responding in 282 ms",
+          "ms": 282
         },
         {
           "id": "docs",
           "name": "Documentation",
           "level": "operational",
-          "detail": "Responding in 574 ms",
-          "ms": 574
+          "detail": "Responding in 277 ms",
+          "ms": 277
         },
         {
           "id": "studio",
           "name": "SpecWithCode page",
           "level": "operational",
-          "detail": "Responding in 593 ms",
-          "ms": 593
-        }
-      ]
-    },
-    {
-      "id": "npm-package",
-      "name": "npm package",
-      "level": "operational",
-      "detail": "specweave@3.1.16",
-      "components": [
-        {
-          "id": "latest",
-          "name": "Latest version published",
-          "level": "operational",
-          "detail": "specweave@3.1.16",
-          "ms": 539
-        }
-      ]
-    },
-    {
-      "id": "plugin",
-      "name": "Claude Code plugin",
-      "level": "operational",
-      "detail": "Version 3.1.16",
-      "components": [
-        {
-          "id": "marketplace",
-          "name": "Marketplace manifest",
-          "level": "operational",
-          "detail": "Version 3.1.16",
-          "ms": 489
+          "detail": "Responding in 288 ms",
+          "ms": 288
         }
       ]
     },
@@ -73,14 +73,14 @@
           "name": "Latest release",
           "level": "operational",
           "detail": "v1.0.146, published November 1, 2026",
-          "ms": 605
+          "ms": 408
         },
         {
           "id": "dmg",
           "name": "macOS installer (Apple silicon)",
           "level": "operational",
           "detail": "Download available",
-          "ms": 1327
+          "ms": 783
         }
       ]
     },
@@ -94,15 +94,119 @@
           "id": "mac-feed",
           "name": "macOS update feed",
           "level": "operational",
-          "detail": "Responding in 1328 ms",
-          "ms": 1328
+          "detail": "Responding in 875 ms",
+          "ms": 875
         },
         {
           "id": "service-feed",
           "name": "Service update manifest",
           "level": "operational",
           "detail": "Version 1.0.146",
-          "ms": 1041
+          "ms": 878
+        }
+      ]
+    },
+    {
+      "id": "vskill-platform",
+      "name": "verified-skill.com",
+      "level": "operational",
+      "detail": "Responding in 702 ms",
+      "components": [
+        {
+          "id": "home",
+          "name": "Home page",
+          "level": "operational",
+          "detail": "Responding in 702 ms",
+          "ms": 702
+        }
+      ]
+    },
+    {
+      "id": "vskill-api",
+      "name": "API",
+      "level": "operational",
+      "detail": "All 2 checks passing",
+      "components": [
+        {
+          "id": "skills",
+          "name": "Skill listing",
+          "level": "operational",
+          "detail": "Responding in 349 ms",
+          "ms": 349
+        },
+        {
+          "id": "stats",
+          "name": "Catalog stats",
+          "level": "operational",
+          "detail": "Responding in 1212 ms",
+          "ms": 1212
+        }
+      ]
+    },
+    {
+      "id": "vskill-registry",
+      "name": "Skill registry",
+      "level": "operational",
+      "detail": "All 2 checks passing",
+      "components": [
+        {
+          "id": "lookup",
+          "name": "Skill lookup",
+          "level": "operational",
+          "detail": "Responding in 401 ms",
+          "ms": 401
+        },
+        {
+          "id": "search",
+          "name": "Search",
+          "level": "operational",
+          "detail": "Responding in 2236 ms",
+          "ms": 2236
+        }
+      ]
+    },
+    {
+      "id": "crawl-workers",
+      "name": "Crawl workers",
+      "level": "operational",
+      "detail": "3 of 3 running",
+      "components": [
+        {
+          "id": "workers",
+          "name": "Workers",
+          "level": "operational",
+          "detail": "3 of 3 running",
+          "ms": 246
+        }
+      ]
+    },
+    {
+      "id": "npm-package",
+      "name": "npm package",
+      "level": "operational",
+      "detail": "specweave@3.1.16",
+      "components": [
+        {
+          "id": "latest",
+          "name": "Latest version published",
+          "level": "operational",
+          "detail": "specweave@3.1.16",
+          "ms": 341
+        }
+      ]
+    },
+    {
+      "id": "plugin",
+      "name": "Claude Code plugin",
+      "level": "operational",
+      "detail": "Version 3.1.16",
+      "components": [
+        {
+          "id": "marketplace",
+          "name": "Marketplace manifest",
+          "level": "operational",
+          "detail": "Version 3.1.16",
+          "ms": 296
         }
       ]
     },
