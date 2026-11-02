@@ -176,10 +176,10 @@ export function serviceDays(history, id, now) {
   });
 }
 
-export function uptime(history, id, now) {
+export function uptime(history, id, now, days = HISTORY_DAYS) {
   let known = 0;
   let good = 0;
-  for (const date of historyDates(now)) {
+  for (const date of historyDates(now, days)) {
     const counts = history.days?.[date]?.[id]?.counts ?? {};
     for (const level of LEVELS) {
       if (level === 'unknown') continue;
@@ -203,7 +203,7 @@ export function headline(services, groups) {
   if (!own.length) {
     return {
       level: 'degraded',
-      title: 'SpecWeave is operational',
+      title: 'Our services are operational',
       description: `${upstream.map((s) => s.name).join(', ')} ${upstream.length === 1 ? 'reports' : 'report'} issues upstream.`,
     };
   }

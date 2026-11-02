@@ -34,7 +34,32 @@ async function fetchWithRetry(url, init) {
 
 const result = (check, level, detail, ms = null) => ({ id: check.id, name: check.name, level, detail, ms });
 
+const valueAt = (json, path) => path.split('.').reduce((node, key) => (node == null ? undefined : node[key]), json);
+
+/**
+ * A pool of workers whose addresses come from a secret, so the public config
+ * and page never name them. Reports how many answer /health with a running scheduler.
+ */
+async function probeWorkers(check) {
+  const urls = (process.env[check.urlsEnv] ?? '').split(/[\s,]+/).filter(Boolean);
+  if (!urls.length) return result(check, 'unknown', 'Not configured');
+  const answers = await Promise.all(urls.map(async (url) => {
+    try {
+      const response = await fetchWithRetry(url);
+      const json = response.ok ? JSON.parse(response.body) : null;
+      return { up: json?.status === 'ok' && json?.scheduler?.running !== false, ms: response.ms };
+    } catch {
+      return { up: false, ms: null };
+    }
+  }));
+  const up = answers.filter((a) => a.up).length;
+  const level = up === urls.length ? 'operational' : up === 0 ? 'major_outage' : 'degraded';
+  const ms = Math.max(0, ...answers.map((a) => a.ms ?? 0));
+  return result(check, level, `${up} of ${urls.length} running`, ms);
+}
+
 async function probe(check) {
+  if (check.kind === 'workers') return probeWorkers(check);
   try {
     const init = check.kind === 'download' ? { headers: { range: 'bytes=0-0' }, discardBody: true } : {};
     const response = await fetchWithRetry(check.url, init);
@@ -63,7 +88,10 @@ async function probe(check) {
       case 'json': {
         const json = JSON.parse(response.body);
         if (check.expectKey && !(check.expectKey in json)) return result(check, 'partial_outage', `Missing "${check.expectKey}"`, response.ms);
-        return result(check, slow ? 'degraded' : 'operational', json.version ? `Version ${json.version}` : `Responding in ${timing}`, response.ms);
+        const off = (check.expectTrue ?? []).find((path) => valueAt(json, path) !== true);
+        if (off) return result(check, 'partial_outage', `"${off}" is not true`, response.ms);
+        if (slow) return result(check, 'degraded', `Slow response (${timing})`, response.ms);
+        return result(check, 'operational', check.okDetail ?? (json.version ? `Version ${json.version}` : `Responding in ${timing}`), response.ms);
       }
       default:
         return result(check, 'unknown', 'Unsupported check');

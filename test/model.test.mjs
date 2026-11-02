@@ -78,8 +78,13 @@ test('banner separates our services from upstream trouble', () => {
   const groups = [{ id: 'specweave' }, { id: 'dependencies' }];
   assert.equal(headline([{ name: 'Site', group: 'specweave', level: 'operational' }], groups).title, 'All systems operational');
   const upstream = headline([{ name: 'Site', group: 'specweave', level: 'operational' }, { name: 'GitHub', group: 'dependencies', level: 'degraded' }], groups);
-  assert.equal(upstream.title, 'SpecWeave is operational');
+  assert.equal(upstream.title, 'Our services are operational');
   const own = headline([{ name: 'Site', group: 'specweave', level: 'major_outage' }], groups);
   assert.equal(own.title, '1 service needs attention');
   assert.equal(rollup(['operational', 'unknown']), 'unknown');
+});
+
+test('the public config names no raw worker addresses', async () => {
+  const text = await readFile(new URL('../config/services.json', import.meta.url), 'utf8');
+  assert.doesNotMatch(text, /\b\d{1,3}(\.\d{1,3}){3}\b/);
 });
