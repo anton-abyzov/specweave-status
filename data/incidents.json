@@ -360,6 +360,18 @@
       "updatedAt": "2026-11-03T14:08:12.321Z",
       "resolvedAt": "2026-11-03T14:08:12.321Z",
       "url": "https://stspg.io/h1xqhrcn5gqn"
+    },
+    {
+      "id": "github:13b6lyl8d7bz",
+      "serviceId": "github",
+      "title": "Incident with Git Operations",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-11-03T20:57:14.432Z",
+      "updatedAt": "2026-11-03T20:57:14.525Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/n478rfsspcmr"
     }
   ]
 }
