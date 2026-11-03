@@ -366,11 +366,11 @@
       "serviceId": "github",
       "title": "Incident with Git Operations",
       "level": "degraded",
-      "stage": "investigating",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-11-03T20:57:14.432Z",
-      "updatedAt": "2026-11-03T22:05:09.331Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-11-03T22:43:07.260Z",
+      "resolvedAt": "2026-11-03T22:43:07.260Z",
       "url": "https://stspg.io/n478rfsspcmr"
     }
   ]
