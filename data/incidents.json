@@ -354,11 +354,11 @@
       "serviceId": "github",
       "title": "Incident with API, Git, and Copilot requests",
       "level": "degraded",
-      "stage": "investigating",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-11-03T13:25:19.609Z",
-      "updatedAt": "2026-11-03T13:52:21.306Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-11-03T14:08:12.321Z",
+      "resolvedAt": "2026-11-03T14:08:12.321Z",
       "url": "https://stspg.io/h1xqhrcn5gqn"
     }
   ]
