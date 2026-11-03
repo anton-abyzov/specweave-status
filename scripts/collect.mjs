@@ -47,7 +47,7 @@ async function probeWorkers(check) {
     try {
       const response = await fetchWithRetry(url);
       const json = response.ok ? JSON.parse(response.body) : null;
-      return { up: json?.status === 'ok' && json?.scheduler?.running !== false, ms: response.ms };
+      return { up: json?.status === 'ok' && json?.scheduler?.running === true, ms: response.ms };
     } catch {
       return { up: false, ms: null };
     }
