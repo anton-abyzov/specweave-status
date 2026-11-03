@@ -81,7 +81,18 @@ test('banner separates our services from upstream trouble', () => {
   assert.equal(upstream.title, 'Our services are operational');
   const own = headline([{ name: 'Site', group: 'specweave', level: 'major_outage' }], groups);
   assert.equal(own.title, '1 service needs attention');
+  const unknown = { name: 'Crawl workers', group: 'specweave', level: 'unknown' };
+  assert.equal(headline([unknown], groups).level, 'unknown');
+  assert.equal(headline([unknown, { name: 'GitHub', group: 'dependencies', level: 'degraded' }], groups).title, '1 service needs attention');
   assert.equal(rollup(['operational', 'unknown']), 'unknown');
+});
+
+test('daily history distinguishes unknown results from observed checks', () => {
+  const { history } = record(emptyHistory(), [], [result('unknown')], NOW);
+  const day = serviceDays(history, 'website', NOW).at(-1);
+  assert.equal(day.level, 'unknown');
+  assert.equal(day.unknown, day.checks);
+  assert.equal(uptime(history, 'website', NOW), null);
 });
 
 test('the public config names no raw worker addresses', async () => {

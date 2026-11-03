@@ -50,9 +50,15 @@ async function getJson(path, fallback) {
 function showPopover(bar, day, incidents) {
   const popover = $('#day-popover');
   const related = incidents.filter((i) => i.startedAt.slice(0, 10) <= day.date && (i.resolvedAt ?? '9999').slice(0, 10) >= day.date);
+  const observed = day.checks - day.unknown;
+  let summary = 'No checks recorded this day.';
+  if (observed) summary = day.failures === 0
+    ? `${observed} checks passed.`
+    : `${day.failures} of ${observed} checks found a problem.`;
+  if (day.unknown) summary = `${observed ? summary + ' ' : ''}${day.unknown} checks had unknown results.`;
   popover.replaceChildren(
     el('div', { class: 'popover-head' }, el('span', {}, dateLabel(day.date)), chip(day.level)),
-    el('p', {}, day.checks === 0 ? 'No checks recorded this day.' : day.failures === 0 ? `${day.checks} checks, all healthy.` : `${day.failures} of ${day.checks} checks found a problem.`),
+    el('p', {}, summary),
     day.notes.length ? el('ul', {}, day.notes.map((note) => el('li', {}, note))) : null,
     related.length
       ? el('div', { class: 'related' }, el('strong', {}, 'Related incidents'), el('ul', {}, related.slice(0, 3).map((i) => el('li', {}, i.title))))
@@ -180,8 +186,8 @@ function render() {
 
   const banner = $('#banner');
   banner.dataset.level = stale && services.length ? 'unknown' : head.level;
-  $('#banner-title').textContent = head.title;
-  $('#banner-description').textContent = head.description;
+  $('#banner-title').textContent = stale && services.length ? 'Current status unavailable' : head.title;
+  $('#banner-description').textContent = stale && services.length ? 'Showing the last published checks.' : head.description;
   $('#banner-age').textContent = status?.generatedAt
     ? `Last checked ${age(status.generatedAt, now)} · ${timeLabel(status.generatedAt)}${stale ? ' · checks are delayed; this may be out of date' : ''}`
     : 'The first check has not run yet.';
@@ -203,13 +209,21 @@ function render() {
   $('#past').hidden = past.length === 0;
   const count = past.reduce((sum, day) => sum + day.items.reduce((n, item) => n + item.repeats, 0), 0);
   $('#past').replaceChildren(
-    el('button', { class: 'group-head', type: 'button', 'aria-expanded': String(pastOpen), onclick: () => { pastOpen = !pastOpen; render(); } },
+    el('button', { class: 'group-head', type: 'button', 'aria-expanded': String(pastOpen), onclick: () => {
+      pastOpen = !pastOpen;
+      render();
+      $('#past > .group-head')?.focus();
+    } },
       el('span', { class: 'chevron', 'aria-hidden': 'true' }, '›'),
       el('span', { class: 'grow' }, el('div', { class: 'group-name' }, 'Past incidents'), el('div', { class: 'muted small' }, `${count} in the last 14 days`))),
     ...(pastOpen ? [el('ul', { class: 'rows' }, past.map((day) => {
           const dayOpen = openDays.has(day.date);
           return el('li', { class: 'past-day' },
-            el('button', { class: 'day-toggle', type: 'button', 'aria-expanded': String(dayOpen), onclick: () => { dayOpen ? openDays.delete(day.date) : openDays.add(day.date); render(); } },
+            el('button', { class: 'day-toggle', type: 'button', dataset: { date: day.date }, 'aria-expanded': String(dayOpen), onclick: () => {
+              dayOpen ? openDays.delete(day.date) : openDays.add(day.date);
+              render();
+              $(`#past .day-toggle[data-date="${day.date}"]`)?.focus();
+            } },
               el('span', { class: 'chevron', 'aria-hidden': 'true' }, '›'),
               el('span', { class: 'grow' }, day.date),
               el('span', { class: 'muted small' }, `${day.items.length} incident${day.items.length === 1 ? '' : 's'}`)),

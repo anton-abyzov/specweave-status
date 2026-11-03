@@ -171,8 +171,9 @@ export function serviceDays(history, id, now) {
     const entry = history.days?.[date]?.[id];
     const counts = entry?.counts ?? {};
     const checks = Object.values(counts).reduce((a, b) => a + b, 0);
-    const failures = checks - (counts.operational ?? 0) - (counts.maintenance ?? 0) - (counts.unknown ?? 0);
-    return { date, level: dayLevel(counts), checks, failures, notes: entry?.notes ?? [] };
+    const unknown = counts.unknown ?? 0;
+    const failures = checks - (counts.operational ?? 0) - (counts.maintenance ?? 0) - unknown;
+    return { date, level: dayLevel(counts), checks, failures, unknown, notes: entry?.notes ?? [] };
   });
 }
 
@@ -197,10 +198,12 @@ export function headline(services, groups) {
   const trouble = (s) => ['degraded', 'partial_outage', 'major_outage'].includes(s.level);
   const own = services.filter((s) => !deps.has(s.group) && trouble(s));
   const upstream = services.filter((s) => deps.has(s.group) && trouble(s));
+  const unknown = services.filter((s) => s.level === 'unknown');
   if (!own.length && !upstream.length) {
+    if (unknown.length) return { level: 'unknown', title: 'Some status checks are unavailable', description: unknown.map((s) => s.name).join(', ') };
     return { level: 'operational', title: 'All systems operational', description: `${services.length} services checked` };
   }
-  if (!own.length) {
+  if (!own.length && !unknown.some((s) => !deps.has(s.group))) {
     return {
       level: 'degraded',
       title: 'Our services are operational',
