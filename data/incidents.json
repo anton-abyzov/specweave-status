@@ -348,6 +348,18 @@
       "updatedAt": "2026-10-30T23:33:50.554Z",
       "resolvedAt": "2026-10-30T23:33:50.554Z",
       "url": "https://stspg.io/5bh6qnzn76tk"
+    },
+    {
+      "id": "github:rxlj89wpk7px",
+      "serviceId": "github",
+      "title": "Incident with API, Git, and Copilot requests",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-11-03T13:25:19.609Z",
+      "updatedAt": "2026-11-03T13:52:21.306Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/h1xqhrcn5gqn"
     }
   ]
 }
