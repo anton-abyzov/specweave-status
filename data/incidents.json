@@ -414,11 +414,11 @@
       "serviceId": "github",
       "title": "Incident with Actions",
       "level": "partial_outage",
-      "stage": "monitoring",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-11-04T17:40:33.662Z",
-      "updatedAt": "2026-11-04T18:07:51.139Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-11-04T18:19:23.589Z",
+      "resolvedAt": "2026-11-04T18:19:23.589Z",
       "url": "https://stspg.io/7pwv28hvkmz8"
     }
   ]
