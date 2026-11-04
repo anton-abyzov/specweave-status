@@ -402,11 +402,11 @@
       "serviceId": "github",
       "title": "Incident with Actions and Pages",
       "level": "partial_outage",
-      "stage": "monitoring",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-11-04T16:05:31.572Z",
-      "updatedAt": "2026-11-04T16:49:27.387Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-11-04T17:06:53.475Z",
+      "resolvedAt": "2026-11-04T17:06:53.475Z",
       "url": "https://stspg.io/pjgptg3cfc6n"
     }
   ]
