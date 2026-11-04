@@ -396,6 +396,18 @@
       "updatedAt": "2026-11-04T11:53:22.311Z",
       "resolvedAt": "2026-11-04T11:53:22.311Z",
       "url": "https://stspg.io/18blsgwnbyy6"
+    },
+    {
+      "id": "github:xr3myzj7ms51",
+      "serviceId": "github",
+      "title": "Incident with Actions and Pages",
+      "level": "partial_outage",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-11-04T16:05:31.572Z",
+      "updatedAt": "2026-11-04T16:17:29.703Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/pjgptg3cfc6n"
     }
   ]
 }
