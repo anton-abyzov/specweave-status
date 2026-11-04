@@ -378,11 +378,11 @@
       "serviceId": "github",
       "title": "Increased task-related errors for Copilot Mission Control",
       "level": "degraded",
-      "stage": "investigating",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-11-04T08:45:00.272Z",
-      "updatedAt": "2026-11-04T09:50:33.743Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-11-04T10:19:40.928Z",
+      "resolvedAt": "2026-11-04T10:19:40.928Z",
       "url": "https://stspg.io/hj74883wgn0t"
     },
     {
@@ -393,7 +393,7 @@
       "stage": "investigating",
       "origin": "upstream",
       "startedAt": "2026-11-04T09:49:55.675Z",
-      "updatedAt": "2026-11-04T09:50:47.473Z",
+      "updatedAt": "2026-11-04T09:53:38.854Z",
       "resolvedAt": null,
       "url": "https://stspg.io/18blsgwnbyy6"
     }
