@@ -462,11 +462,11 @@
       "serviceId": "updates",
       "title": "Update feed: macOS update feed: Slow response (8935 ms)",
       "level": "major_outage",
-      "stage": "monitoring",
+      "stage": "resolved",
       "origin": "probe",
       "startedAt": "2026-11-05T14:08:41.806Z",
-      "updatedAt": "2026-11-05T15:44:11.078Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-11-05T15:53:32.735Z",
+      "resolvedAt": "2026-11-05T15:53:32.735Z",
       "url": null
     }
   ]
