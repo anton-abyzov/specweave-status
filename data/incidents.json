@@ -449,11 +449,11 @@
       "id": "probe:downloads:1793888278173",
       "serviceId": "downloads",
       "title": "Downloads: macOS installer (Apple silicon): Slow response (8902 ms)",
-      "level": "degraded",
+      "level": "major_outage",
       "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-05T14:08:41.806Z",
-      "updatedAt": "2026-11-05T14:26:16.375Z",
+      "updatedAt": "2026-11-05T14:37:15.821Z",
       "resolvedAt": null,
       "url": null
     },
@@ -465,7 +465,7 @@
       "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-05T14:08:41.806Z",
-      "updatedAt": "2026-11-05T14:26:16.375Z",
+      "updatedAt": "2026-11-05T14:37:15.821Z",
       "resolvedAt": null,
       "url": null
     }
