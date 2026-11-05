@@ -468,6 +468,18 @@
       "updatedAt": "2026-11-05T15:53:32.735Z",
       "resolvedAt": "2026-11-05T15:53:32.735Z",
       "url": null
+    },
+    {
+      "id": "github:t89g2q1800fr",
+      "serviceId": "github",
+      "title": "Incident with Actions",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-11-05T16:50:11.078Z",
+      "updatedAt": "2026-11-05T16:50:11.192Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/lv4q3xm9r0rk"
     }
   ]
 }
