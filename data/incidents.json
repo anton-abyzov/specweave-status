@@ -444,6 +444,30 @@
       "updatedAt": "2026-11-05T09:37:46.996Z",
       "resolvedAt": "2026-11-05T09:37:46.996Z",
       "url": null
+    },
+    {
+      "id": "probe:downloads:1793888278173",
+      "serviceId": "downloads",
+      "title": "Downloads: macOS installer (Apple silicon): Slow response (8902 ms)",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "probe",
+      "startedAt": "2026-11-05T14:08:41.806Z",
+      "updatedAt": "2026-11-05T14:17:58.173Z",
+      "resolvedAt": null,
+      "url": null
+    },
+    {
+      "id": "probe:updates:1793888278173",
+      "serviceId": "updates",
+      "title": "Update feed: macOS update feed: Slow response (8935 ms)",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "probe",
+      "startedAt": "2026-11-05T14:08:41.806Z",
+      "updatedAt": "2026-11-05T14:17:58.173Z",
+      "resolvedAt": null,
+      "url": null
     }
   ]
 }
