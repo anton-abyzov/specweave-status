@@ -480,6 +480,18 @@
       "updatedAt": "2026-11-05T17:43:20.461Z",
       "resolvedAt": "2026-11-05T17:43:20.461Z",
       "url": "https://stspg.io/lv4q3xm9r0rk"
+    },
+    {
+      "id": "github:pfbmpxxfq1cy",
+      "serviceId": "github",
+      "title": "Degraded performance for multiple GitHub services",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-11-05T23:36:06.109Z",
+      "updatedAt": "2026-11-05T23:36:51.585Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/s5bs6jn41fwh"
     }
   ]
 }
