@@ -474,11 +474,11 @@
       "serviceId": "github",
       "title": "Incident with Actions",
       "level": "degraded",
-      "stage": "monitoring",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-11-05T16:50:11.078Z",
-      "updatedAt": "2026-11-05T17:04:46.838Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-11-05T17:43:20.461Z",
+      "resolvedAt": "2026-11-05T17:43:20.461Z",
       "url": "https://stspg.io/lv4q3xm9r0rk"
     }
   ]
