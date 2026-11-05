@@ -461,11 +461,11 @@
       "id": "probe:updates:1793888278173",
       "serviceId": "updates",
       "title": "Update feed: macOS update feed: Slow response (8935 ms)",
-      "level": "degraded",
-      "stage": "monitoring",
+      "level": "major_outage",
+      "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-05T14:08:41.806Z",
-      "updatedAt": "2026-11-05T15:25:55.616Z",
+      "updatedAt": "2026-11-05T15:35:01.580Z",
       "resolvedAt": null,
       "url": null
     }
