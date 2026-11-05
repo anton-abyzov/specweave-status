@@ -426,11 +426,11 @@
       "serviceId": "downloads",
       "title": "Downloads: macOS installer (Apple silicon): Slow response (9567 ms)",
       "level": "degraded",
-      "stage": "monitoring",
+      "stage": "resolved",
       "origin": "probe",
       "startedAt": "2026-11-05T08:53:25.425Z",
-      "updatedAt": "2026-11-05T09:27:42.858Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-11-05T09:37:46.996Z",
+      "resolvedAt": "2026-11-05T09:37:46.996Z",
       "url": null
     },
     {
@@ -438,11 +438,11 @@
       "serviceId": "updates",
       "title": "Update feed: macOS update feed: Slow response (10626 ms)",
       "level": "degraded",
-      "stage": "monitoring",
+      "stage": "resolved",
       "origin": "probe",
       "startedAt": "2026-11-05T08:53:25.425Z",
-      "updatedAt": "2026-11-05T09:27:42.858Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-11-05T09:37:46.996Z",
+      "resolvedAt": "2026-11-05T09:37:46.996Z",
       "url": null
     }
   ]
