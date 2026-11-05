@@ -462,10 +462,10 @@
       "serviceId": "updates",
       "title": "Update feed: macOS update feed: Slow response (8935 ms)",
       "level": "degraded",
-      "stage": "identified",
+      "stage": "monitoring",
       "origin": "probe",
       "startedAt": "2026-11-05T14:08:41.806Z",
-      "updatedAt": "2026-11-05T15:17:25.486Z",
+      "updatedAt": "2026-11-05T15:25:55.616Z",
       "resolvedAt": null,
       "url": null
     }
