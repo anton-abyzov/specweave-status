@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-05T14:45:54.918Z",
-  "level": "degraded",
+  "generatedAt": "2026-11-05T14:54:03.656Z",
+  "level": "operational",
   "services": [
     {
       "id": "connect",
       "name": "Connect relay",
       "level": "operational",
-      "detail": "Responding in 1015 ms",
+      "detail": "Responding in 1219 ms",
       "components": [
         {
           "id": "relay",
           "name": "Relay",
           "level": "operational",
-          "detail": "Responding in 1015 ms",
-          "ms": 1015
+          "detail": "Responding in 1219 ms",
+          "ms": 1219
         }
       ]
     },
@@ -29,7 +29,7 @@
           "name": "Sign-in service",
           "level": "operational",
           "detail": "Google and Apple sign-in available",
-          "ms": 209
+          "ms": 250
         }
       ]
     },
@@ -43,66 +43,66 @@
           "id": "home",
           "name": "Home page",
           "level": "operational",
-          "detail": "Responding in 299 ms",
-          "ms": 299
+          "detail": "Responding in 195 ms",
+          "ms": 195
         },
         {
           "id": "docs",
           "name": "Documentation",
           "level": "operational",
-          "detail": "Responding in 311 ms",
-          "ms": 311
+          "detail": "Responding in 358 ms",
+          "ms": 358
         },
         {
           "id": "studio",
           "name": "SpecWithCode page",
           "level": "operational",
-          "detail": "Responding in 311 ms",
-          "ms": 311
+          "detail": "Responding in 1584 ms",
+          "ms": 1584
         }
       ]
     },
     {
       "id": "downloads",
       "name": "Downloads",
-      "level": "degraded",
-      "detail": "macOS installer (Apple silicon): Slow response (8341 ms)",
+      "level": "operational",
+      "detail": "All 2 checks passing",
       "components": [
         {
           "id": "release",
           "name": "Latest release",
           "level": "operational",
           "detail": "v1.0.198, published November 5, 2026",
-          "ms": 440
+          "ms": 305
         },
         {
           "id": "dmg",
           "name": "macOS installer (Apple silicon)",
-          "level": "degraded",
-          "detail": "Slow response (8341 ms)",
-          "ms": 8341
+          "level": "operational",
+          "detail": "Download available",
+          "ms": 557
         }
       ]
     },
     {
       "id": "updates",
       "name": "Update feed",
-      "level": "degraded",
-      "detail": "macOS update feed: Slow response (8235 ms)",
+      "level": "operational",
+      "detail": "All 2 checks passing",
       "components": [
         {
           "id": "mac-feed",
           "name": "macOS update feed",
-          "level": "degraded",
-          "detail": "Slow response (8235 ms)",
-          "ms": 8235
+          "level": "operational",
+          "detail": "Responding in 697 ms",
+          "ms": 697
         },
         {
           "id": "service-feed",
           "name": "Service update manifest",
-          "level": "degraded",
-          "detail": "Slow response (8327 ms)",
-          "ms": 8327
+          "level": "operational",
+          "detail": "Version 1.0.198",
+          "ms": 489
         }
       ]
     },
@@ -110,14 +110,14 @@
       "id": "vskill-platform",
       "name": "verified-skill.com",
       "level": "operational",
-      "detail": "Responding in 540 ms",
+      "detail": "Responding in 557 ms",
       "components": [
         {
           "id": "home",
           "name": "Home page",
           "level": "operational",
-          "detail": "Responding in 540 ms",
-          "ms": 540
+          "detail": "Responding in 557 ms",
+          "ms": 557
         }
       ]
     },
@@ -131,15 +131,15 @@
           "id": "skills",
           "name": "Skill listing",
           "level": "operational",
-          "detail": "Responding in 2890 ms",
-          "ms": 2890
+          "detail": "Responding in 395 ms",
+          "ms": 395
         },
         {
           "id": "stats",
           "name": "Catalog stats",
           "level": "operational",
-          "detail": "Responding in 392 ms",
-          "ms": 392
+          "detail": "Responding in 348 ms",
+          "ms": 348
         }
       ]
     },
@@ -153,15 +153,15 @@
           "id": "lookup",
           "name": "Skill lookup",
           "level": "operational",
-          "detail": "Responding in 2522 ms",
-          "ms": 2522
+          "detail": "Responding in 432 ms",
+          "ms": 432
         },
         {
           "id": "search",
           "name": "Search",
           "level": "operational",
-          "detail": "Responding in 2854 ms",
-          "ms": 2854
+          "detail": "Responding in 1942 ms",
+          "ms": 1942
         }
       ]
     },
@@ -176,7 +176,7 @@
           "name": "Workers",
           "level": "operational",
           "detail": "3 of 3 running",
-          "ms": 278
+          "ms": 195
         }
       ]
     },
@@ -191,7 +191,7 @@
           "name": "Latest version published",
           "level": "operational",
           "detail": "specweave@3.1.21",
-          "ms": 330
+          "ms": 345
         }
       ]
     },
@@ -206,7 +206,7 @@
           "name": "Marketplace manifest",
           "level": "operational",
           "detail": "Version 3.1.21",
-          "ms": 350
+          "ms": 231
         }
       ]
     },
