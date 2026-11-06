@@ -486,10 +486,10 @@
       "serviceId": "github",
       "title": "Degraded performance for multiple GitHub services",
       "level": "degraded",
-      "stage": "investigating",
+      "stage": "monitoring",
       "origin": "upstream",
       "startedAt": "2026-11-05T23:36:06.109Z",
-      "updatedAt": "2026-11-05T23:36:51.585Z",
+      "updatedAt": "2026-11-06T00:19:59.780Z",
       "resolvedAt": null,
       "url": "https://stspg.io/s5bs6jn41fwh"
     }
