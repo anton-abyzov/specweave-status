@@ -492,6 +492,18 @@
       "updatedAt": "2026-11-06T00:45:18.315Z",
       "resolvedAt": "2026-11-06T00:45:18.315Z",
       "url": "https://stspg.io/s5bs6jn41fwh"
+    },
+    {
+      "id": "npm:cc0t2r4403sy",
+      "serviceId": "npm",
+      "title": "Minor issues impacting package publish",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-11-07T14:28:25.140Z",
+      "updatedAt": "2026-11-07T14:28:28.438Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/tf64mpt4xjfv"
     }
   ]
 }
