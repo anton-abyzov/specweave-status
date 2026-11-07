@@ -498,11 +498,11 @@
       "serviceId": "npm",
       "title": "Minor issues impacting package publish",
       "level": "degraded",
-      "stage": "monitoring",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-11-07T14:28:25.140Z",
-      "updatedAt": "2026-11-07T14:37:38.131Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-11-07T15:06:10.113Z",
+      "resolvedAt": "2026-11-07T15:06:10.113Z",
       "url": "https://stspg.io/tf64mpt4xjfv"
     }
   ]
