@@ -516,6 +516,30 @@
       "updatedAt": "2026-11-08T08:39:01.291Z",
       "resolvedAt": null,
       "url": "https://stspg.io/3m3q1nwb142k"
+    },
+    {
+      "id": "probe:downloads:1794127986192",
+      "serviceId": "downloads",
+      "title": "Downloads: macOS installer (Apple silicon): Slow response (11433 ms)",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "probe",
+      "startedAt": "2026-11-08T08:45:03.270Z",
+      "updatedAt": "2026-11-08T08:53:06.192Z",
+      "resolvedAt": null,
+      "url": null
+    },
+    {
+      "id": "probe:updates:1794127986192",
+      "serviceId": "updates",
+      "title": "Update feed: macOS update feed: HTTP 504",
+      "level": "major_outage",
+      "stage": "investigating",
+      "origin": "probe",
+      "startedAt": "2026-11-08T08:45:03.270Z",
+      "updatedAt": "2026-11-08T08:53:06.192Z",
+      "resolvedAt": null,
+      "url": null
     }
   ]
 }
