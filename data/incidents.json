@@ -546,11 +546,11 @@
       "serviceId": "github",
       "title": "Increase in timeouts for some unauthenticated users",
       "level": "degraded",
-      "stage": "investigating",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-11-08T10:36:05.474Z",
-      "updatedAt": "2026-11-08T11:56:20.777Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-11-08T12:34:04.983Z",
+      "resolvedAt": "2026-11-08T12:34:04.983Z",
       "url": "https://stspg.io/5yt31mfmyc6p"
     }
   ]
