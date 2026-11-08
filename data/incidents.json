@@ -522,10 +522,10 @@
       "serviceId": "downloads",
       "title": "Downloads: macOS installer (Apple silicon): Slow response (11433 ms)",
       "level": "major_outage",
-      "stage": "identified",
+      "stage": "monitoring",
       "origin": "probe",
       "startedAt": "2026-11-08T08:45:03.270Z",
-      "updatedAt": "2026-11-08T10:33:44.050Z",
+      "updatedAt": "2026-11-08T10:43:36.204Z",
       "resolvedAt": null,
       "url": null
     },
@@ -537,9 +537,21 @@
       "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-08T08:45:03.270Z",
-      "updatedAt": "2026-11-08T10:33:44.050Z",
+      "updatedAt": "2026-11-08T10:43:36.204Z",
       "resolvedAt": null,
       "url": null
+    },
+    {
+      "id": "github:pyynvrm1vskw",
+      "serviceId": "github",
+      "title": "Increase in timeouts for some unauthenticated users",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-11-08T10:36:05.474Z",
+      "updatedAt": "2026-11-08T10:36:05.528Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/5yt31mfmyc6p"
     }
   ]
 }
