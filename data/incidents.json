@@ -504,6 +504,18 @@
       "updatedAt": "2026-11-07T15:06:10.113Z",
       "resolvedAt": "2026-11-07T15:06:10.113Z",
       "url": "https://stspg.io/tf64mpt4xjfv"
+    },
+    {
+      "id": "claude:kw2lxj1th04c",
+      "serviceId": "claude",
+      "title": "Degraded performance for Claude Fable 5.1",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-11-08T08:28:32.806Z",
+      "updatedAt": "2026-11-08T08:28:33.134Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/3m3q1nwb142k"
     }
   ]
 }
