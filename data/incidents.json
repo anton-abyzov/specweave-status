@@ -648,6 +648,18 @@
       "updatedAt": "2026-11-09T11:53:24.617Z",
       "resolvedAt": "2026-11-09T11:53:24.617Z",
       "url": "https://stspg.io/4vdghm7tycm4"
+    },
+    {
+      "id": "probe:vskill-registry:1794237443168",
+      "serviceId": "vskill-registry",
+      "title": "Skill registry: Search: Timed out",
+      "level": "major_outage",
+      "stage": "investigating",
+      "origin": "probe",
+      "startedAt": "2026-11-09T15:08:14.495Z",
+      "updatedAt": "2026-11-09T15:17:23.168Z",
+      "resolvedAt": null,
+      "url": null
     }
   ]
 }
