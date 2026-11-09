@@ -576,6 +576,30 @@
       "updatedAt": "2026-11-09T01:44:33.084Z",
       "resolvedAt": "2026-11-09T01:44:33.084Z",
       "url": null
+    },
+    {
+      "id": "probe:downloads:1794202048459",
+      "serviceId": "downloads",
+      "title": "Downloads: macOS installer (Apple silicon): HTTP 504",
+      "level": "major_outage",
+      "stage": "investigating",
+      "origin": "probe",
+      "startedAt": "2026-11-09T05:18:21.761Z",
+      "updatedAt": "2026-11-09T05:27:28.459Z",
+      "resolvedAt": null,
+      "url": null
+    },
+    {
+      "id": "probe:updates:1794202048459",
+      "serviceId": "updates",
+      "title": "Update feed: macOS update feed: HTTP 504",
+      "level": "major_outage",
+      "stage": "investigating",
+      "origin": "probe",
+      "startedAt": "2026-11-09T05:18:21.761Z",
+      "updatedAt": "2026-11-09T05:27:28.459Z",
+      "resolvedAt": null,
+      "url": null
     }
   ]
 }
