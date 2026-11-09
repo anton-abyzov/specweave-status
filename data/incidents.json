@@ -666,10 +666,10 @@
       "serviceId": "vskill-registry",
       "title": "Skill registry: Search: Slow response (14585 ms)",
       "level": "degraded",
-      "stage": "identified",
+      "stage": "monitoring",
       "origin": "probe",
       "startedAt": "2026-11-09T17:07:39.913Z",
-      "updatedAt": "2026-11-09T18:43:29.132Z",
+      "updatedAt": "2026-11-09T18:53:28.434Z",
       "resolvedAt": null,
       "url": null
     },
@@ -678,10 +678,10 @@
       "serviceId": "github",
       "title": "Incident with Actions and Checks API",
       "level": "major_outage",
-      "stage": "investigating",
+      "stage": "monitoring",
       "origin": "upstream",
       "startedAt": "2026-11-09T18:12:37.232Z",
-      "updatedAt": "2026-11-09T18:30:17.568Z",
+      "updatedAt": "2026-11-09T18:43:24.587Z",
       "resolvedAt": null,
       "url": "https://stspg.io/7yw63xl9ztrv"
     }
