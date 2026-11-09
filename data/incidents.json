@@ -585,7 +585,7 @@
       "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-09T05:18:21.761Z",
-      "updatedAt": "2026-11-09T05:54:00.013Z",
+      "updatedAt": "2026-11-09T06:17:19.283Z",
       "resolvedAt": null,
       "url": null
     },
@@ -597,9 +597,21 @@
       "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-09T05:18:21.761Z",
-      "updatedAt": "2026-11-09T05:54:00.013Z",
+      "updatedAt": "2026-11-09T06:17:19.283Z",
       "resolvedAt": null,
       "url": null
+    },
+    {
+      "id": "github:c9px7cw2ghrs",
+      "serviceId": "github",
+      "title": "Increased timeouts due to surge in anonymous users",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-11-09T05:59:07.841Z",
+      "updatedAt": "2026-11-09T05:59:07.910Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/jztczfplj6yb"
     }
   ]
 }
