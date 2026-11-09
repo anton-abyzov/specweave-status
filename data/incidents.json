@@ -654,10 +654,10 @@
       "serviceId": "vskill-registry",
       "title": "Skill registry: Search: Timed out",
       "level": "major_outage",
-      "stage": "investigating",
+      "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-09T15:08:14.495Z",
-      "updatedAt": "2026-11-09T15:17:23.168Z",
+      "updatedAt": "2026-11-09T15:25:15.820Z",
       "resolvedAt": null,
       "url": null
     }
