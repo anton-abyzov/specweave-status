@@ -582,11 +582,11 @@
       "serviceId": "downloads",
       "title": "Downloads: macOS installer (Apple silicon): HTTP 504",
       "level": "major_outage",
-      "stage": "monitoring",
+      "stage": "resolved",
       "origin": "probe",
       "startedAt": "2026-11-09T05:18:21.761Z",
-      "updatedAt": "2026-11-09T06:42:10.024Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-11-09T06:55:08.574Z",
+      "resolvedAt": "2026-11-09T06:55:08.574Z",
       "url": null
     },
     {
@@ -594,11 +594,11 @@
       "serviceId": "updates",
       "title": "Update feed: macOS update feed: HTTP 504",
       "level": "major_outage",
-      "stage": "monitoring",
+      "stage": "resolved",
       "origin": "probe",
       "startedAt": "2026-11-09T05:18:21.761Z",
-      "updatedAt": "2026-11-09T06:42:10.024Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-11-09T06:55:08.574Z",
+      "resolvedAt": "2026-11-09T06:55:08.574Z",
       "url": null
     },
     {
@@ -606,10 +606,10 @@
       "serviceId": "github",
       "title": "Increased timeouts due to surge in anonymous users",
       "level": "degraded",
-      "stage": "investigating",
+      "stage": "monitoring",
       "origin": "upstream",
       "startedAt": "2026-11-09T05:59:07.841Z",
-      "updatedAt": "2026-11-09T06:30:44.190Z",
+      "updatedAt": "2026-11-09T06:51:26.487Z",
       "resolvedAt": null,
       "url": "https://stspg.io/jztczfplj6yb"
     }
