@@ -636,6 +636,18 @@
       "updatedAt": "2026-11-09T08:38:23.590Z",
       "resolvedAt": "2026-11-09T08:38:23.590Z",
       "url": null
+    },
+    {
+      "id": "github:xxb3l2bm76dr",
+      "serviceId": "github",
+      "title": "Incident with Webhooks and Actions",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-11-09T10:00:35.209Z",
+      "updatedAt": "2026-11-09T10:00:35.653Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/4vdghm7tycm4"
     }
   ]
 }
