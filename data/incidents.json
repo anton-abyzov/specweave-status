@@ -582,10 +582,10 @@
       "serviceId": "downloads",
       "title": "Downloads: macOS installer (Apple silicon): HTTP 504",
       "level": "major_outage",
-      "stage": "investigating",
+      "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-09T05:18:21.761Z",
-      "updatedAt": "2026-11-09T05:27:28.459Z",
+      "updatedAt": "2026-11-09T05:37:30.989Z",
       "resolvedAt": null,
       "url": null
     },
@@ -594,10 +594,10 @@
       "serviceId": "updates",
       "title": "Update feed: macOS update feed: HTTP 504",
       "level": "major_outage",
-      "stage": "investigating",
+      "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-09T05:18:21.761Z",
-      "updatedAt": "2026-11-09T05:27:28.459Z",
+      "updatedAt": "2026-11-09T05:37:30.989Z",
       "resolvedAt": null,
       "url": null
     }
