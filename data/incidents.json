@@ -641,11 +641,11 @@
       "id": "github:xxb3l2bm76dr",
       "serviceId": "github",
       "title": "Incident with Webhooks and Actions",
-      "level": "degraded",
+      "level": "partial_outage",
       "stage": "investigating",
       "origin": "upstream",
       "startedAt": "2026-11-09T10:00:35.209Z",
-      "updatedAt": "2026-11-09T11:06:35.833Z",
+      "updatedAt": "2026-11-09T11:17:28.548Z",
       "resolvedAt": null,
       "url": "https://stspg.io/4vdghm7tycm4"
     }
