@@ -609,7 +609,7 @@
       "stage": "investigating",
       "origin": "upstream",
       "startedAt": "2026-11-09T05:59:07.841Z",
-      "updatedAt": "2026-11-09T07:43:15.426Z",
+      "updatedAt": "2026-11-09T08:16:25.176Z",
       "resolvedAt": null,
       "url": "https://stspg.io/jztczfplj6yb"
     },
@@ -618,10 +618,10 @@
       "serviceId": "downloads",
       "title": "Downloads: macOS installer (Apple silicon): Slow response (11680 ms)",
       "level": "degraded",
-      "stage": "identified",
+      "stage": "monitoring",
       "origin": "probe",
       "startedAt": "2026-11-09T07:20:51.341Z",
-      "updatedAt": "2026-11-09T08:11:35.279Z",
+      "updatedAt": "2026-11-09T08:29:26.539Z",
       "resolvedAt": null,
       "url": null
     },
@@ -630,10 +630,10 @@
       "serviceId": "updates",
       "title": "Update feed: macOS update feed: HTTP 504",
       "level": "major_outage",
-      "stage": "identified",
+      "stage": "monitoring",
       "origin": "probe",
       "startedAt": "2026-11-09T07:20:51.341Z",
-      "updatedAt": "2026-11-09T08:11:35.279Z",
+      "updatedAt": "2026-11-09T08:29:26.539Z",
       "resolvedAt": null,
       "url": null
     }
