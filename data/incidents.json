@@ -582,10 +582,10 @@
       "serviceId": "downloads",
       "title": "Downloads: macOS installer (Apple silicon): HTTP 504",
       "level": "major_outage",
-      "stage": "identified",
+      "stage": "monitoring",
       "origin": "probe",
       "startedAt": "2026-11-09T05:18:21.761Z",
-      "updatedAt": "2026-11-09T06:17:19.283Z",
+      "updatedAt": "2026-11-09T06:42:10.024Z",
       "resolvedAt": null,
       "url": null
     },
@@ -594,10 +594,10 @@
       "serviceId": "updates",
       "title": "Update feed: macOS update feed: HTTP 504",
       "level": "major_outage",
-      "stage": "identified",
+      "stage": "monitoring",
       "origin": "probe",
       "startedAt": "2026-11-09T05:18:21.761Z",
-      "updatedAt": "2026-11-09T06:17:19.283Z",
+      "updatedAt": "2026-11-09T06:42:10.024Z",
       "resolvedAt": null,
       "url": null
     },
@@ -609,7 +609,7 @@
       "stage": "investigating",
       "origin": "upstream",
       "startedAt": "2026-11-09T05:59:07.841Z",
-      "updatedAt": "2026-11-09T05:59:07.910Z",
+      "updatedAt": "2026-11-09T06:30:44.190Z",
       "resolvedAt": null,
       "url": "https://stspg.io/jztczfplj6yb"
     }
