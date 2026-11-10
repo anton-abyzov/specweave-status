@@ -756,6 +756,18 @@
       "updatedAt": "2026-11-10T11:34:14.486Z",
       "resolvedAt": "2026-11-10T11:34:14.486Z",
       "url": null
+    },
+    {
+      "id": "probe:vskill-registry:1794322430691",
+      "serviceId": "vskill-registry",
+      "title": "Skill registry: Search: Slow response (8136 ms)",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "probe",
+      "startedAt": "2026-11-10T14:43:48.186Z",
+      "updatedAt": "2026-11-10T14:53:50.691Z",
+      "resolvedAt": null,
+      "url": null
     }
   ]
 }
