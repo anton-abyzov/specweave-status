@@ -809,11 +809,11 @@
       "id": "probe:vskill-registry:1794348427777",
       "serviceId": "vskill-registry",
       "title": "Skill registry: Search: Slow response (6878 ms)",
-      "level": "degraded",
-      "stage": "monitoring",
+      "level": "major_outage",
+      "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-10T21:53:18.513Z",
-      "updatedAt": "2026-11-10T22:24:01.149Z",
+      "updatedAt": "2026-11-10T22:33:46.440Z",
       "resolvedAt": null,
       "url": null
     }
