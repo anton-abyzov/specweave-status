@@ -774,11 +774,11 @@
       "serviceId": "github",
       "title": "Incident with Git Operations and Pull Requests",
       "level": "major_outage",
-      "stage": "investigating",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-11-10T16:10:52.162Z",
-      "updatedAt": "2026-11-10T17:46:33.969Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-11-10T18:07:58.341Z",
+      "resolvedAt": "2026-11-10T18:07:58.341Z",
       "url": "https://stspg.io/16nsnk2th3rv"
     },
     {
