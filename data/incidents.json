@@ -798,10 +798,10 @@
       "serviceId": "vskill-registry",
       "title": "Skill registry: Skill lookup: Slow response (7573 ms)",
       "level": "degraded",
-      "stage": "investigating",
+      "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-10T18:37:29.178Z",
-      "updatedAt": "2026-11-10T18:45:48.725Z",
+      "updatedAt": "2026-11-10T18:54:12.215Z",
       "resolvedAt": null,
       "url": null
     }
