@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-10T08:10:45.126Z",
+  "generatedAt": "2026-11-10T08:25:55.171Z",
   "level": "operational",
   "services": [
     {
       "id": "connect",
       "name": "Connect relay",
       "level": "operational",
-      "detail": "Responding in 890 ms",
+      "detail": "Responding in 794 ms",
       "components": [
         {
           "id": "relay",
           "name": "Relay",
           "level": "operational",
-          "detail": "Responding in 890 ms",
-          "ms": 890
+          "detail": "Responding in 794 ms",
+          "ms": 794
         }
       ]
     },
@@ -29,7 +29,7 @@
           "name": "Sign-in service",
           "level": "operational",
           "detail": "Google and Apple sign-in available",
-          "ms": 106
+          "ms": 251
         }
       ]
     },
@@ -43,22 +43,22 @@
           "id": "home",
           "name": "Home page",
           "level": "operational",
-          "detail": "Responding in 300 ms",
-          "ms": 300
+          "detail": "Responding in 301 ms",
+          "ms": 301
         },
         {
           "id": "docs",
           "name": "Documentation",
           "level": "operational",
-          "detail": "Responding in 282 ms",
-          "ms": 282
+          "detail": "Responding in 299 ms",
+          "ms": 299
         },
         {
           "id": "studio",
           "name": "SpecWithCode page",
           "level": "operational",
-          "detail": "Responding in 281 ms",
-          "ms": 281
+          "detail": "Responding in 302 ms",
+          "ms": 302
         }
       ]
     },
@@ -73,14 +73,14 @@
           "name": "Latest release",
           "level": "operational",
           "detail": "v1.0.224, published November 10, 2026",
-          "ms": 409
+          "ms": 416
         },
         {
           "id": "dmg",
           "name": "macOS installer (Apple silicon)",
           "level": "operational",
           "detail": "Download available",
-          "ms": 541
+          "ms": 712
         }
       ]
     },
@@ -94,15 +94,15 @@
           "id": "mac-feed",
           "name": "macOS update feed",
           "level": "operational",
-          "detail": "Responding in 647 ms",
-          "ms": 647
+          "detail": "Responding in 595 ms",
+          "ms": 595
         },
         {
           "id": "service-feed",
           "name": "Service update manifest",
           "level": "operational",
           "detail": "Version 1.0.224",
-          "ms": 525
+          "ms": 601
         }
       ]
     },
@@ -110,14 +110,14 @@
       "id": "vskill-platform",
       "name": "verified-skill.com",
       "level": "operational",
-      "detail": "Responding in 453 ms",
+      "detail": "Responding in 580 ms",
       "components": [
         {
           "id": "home",
           "name": "Home page",
           "level": "operational",
-          "detail": "Responding in 453 ms",
-          "ms": 453
+          "detail": "Responding in 580 ms",
+          "ms": 580
         }
       ]
     },
@@ -131,15 +131,15 @@
           "id": "skills",
           "name": "Skill listing",
           "level": "operational",
-          "detail": "Responding in 450 ms",
-          "ms": 450
+          "detail": "Responding in 395 ms",
+          "ms": 395
         },
         {
           "id": "stats",
           "name": "Catalog stats",
           "level": "operational",
-          "detail": "Responding in 276 ms",
-          "ms": 276
+          "detail": "Responding in 317 ms",
+          "ms": 317
         }
       ]
     },
@@ -153,15 +153,15 @@
           "id": "lookup",
           "name": "Skill lookup",
           "level": "operational",
-          "detail": "Responding in 314 ms",
-          "ms": 314
+          "detail": "Responding in 398 ms",
+          "ms": 398
         },
         {
           "id": "search",
           "name": "Search",
           "level": "operational",
-          "detail": "Responding in 145 ms",
-          "ms": 145
+          "detail": "Responding in 186 ms",
+          "ms": 186
         }
       ]
     },
@@ -176,7 +176,7 @@
           "name": "Workers",
           "level": "operational",
           "detail": "3 of 3 running",
-          "ms": 326
+          "ms": 279
         }
       ]
     },
@@ -191,7 +191,7 @@
           "name": "Latest version published",
           "level": "operational",
           "detail": "specweave@3.1.21",
-          "ms": 659
+          "ms": 334
         }
       ]
     },
@@ -206,7 +206,7 @@
           "name": "Marketplace manifest",
           "level": "operational",
           "detail": "Version 3.1.21",
-          "ms": 274
+          "ms": 346
         }
       ]
     },
