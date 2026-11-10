@@ -773,13 +773,25 @@
       "id": "github:hnf21m9jkl3c",
       "serviceId": "github",
       "title": "Incident with Git Operations and Pull Requests",
-      "level": "degraded",
+      "level": "major_outage",
       "stage": "investigating",
       "origin": "upstream",
       "startedAt": "2026-11-10T16:10:52.162Z",
-      "updatedAt": "2026-11-10T16:13:18.844Z",
+      "updatedAt": "2026-11-10T16:31:01.205Z",
       "resolvedAt": null,
       "url": "https://stspg.io/16nsnk2th3rv"
+    },
+    {
+      "id": "probe:vskill-registry:1794328549819",
+      "serviceId": "vskill-registry",
+      "title": "Skill registry: Search: Slow response (14648 ms)",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "probe",
+      "startedAt": "2026-11-10T16:26:10.188Z",
+      "updatedAt": "2026-11-10T16:35:49.819Z",
+      "resolvedAt": null,
+      "url": null
     }
   ]
 }
