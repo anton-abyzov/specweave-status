@@ -834,11 +834,11 @@
       "serviceId": "vskill-registry",
       "title": "Skill registry: Search: Slow response (6643 ms)",
       "level": "major_outage",
-      "stage": "monitoring",
+      "stage": "resolved",
       "origin": "probe",
       "startedAt": "2026-11-11T07:26:25.558Z",
-      "updatedAt": "2026-11-11T09:08:10.551Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-11-11T09:17:54.077Z",
+      "resolvedAt": "2026-11-11T09:17:54.077Z",
       "url": null
     },
     {
