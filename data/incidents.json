@@ -846,11 +846,11 @@
       "serviceId": "cloudflare",
       "title": "SSL Certificate Provisioning Issue",
       "level": "degraded",
-      "stage": "monitoring",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-11-11T07:45:42.146Z",
-      "updatedAt": "2026-11-11T09:01:59.510Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-11-11T10:16:28.901Z",
+      "resolvedAt": "2026-11-11T10:16:28.901Z",
       "url": "https://www.cloudflarestatus.com/incidents/21vwp89eiyjx"
     }
   ]
