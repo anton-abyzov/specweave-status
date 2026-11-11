@@ -882,11 +882,11 @@
       "serviceId": "vskill-registry",
       "title": "Skill registry: Search: Slow response (13169 ms)",
       "level": "degraded",
-      "stage": "monitoring",
+      "stage": "resolved",
       "origin": "probe",
       "startedAt": "2026-11-11T14:53:02.964Z",
-      "updatedAt": "2026-11-11T16:08:24.078Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-11-11T16:18:09.389Z",
+      "resolvedAt": "2026-11-11T16:18:09.389Z",
       "url": null
     }
   ]
