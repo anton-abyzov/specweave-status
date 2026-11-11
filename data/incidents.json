@@ -918,12 +918,24 @@
       "serviceId": "github",
       "title": "Impact across multiple GitHub products including Actions, Pages, and Copilot products.",
       "level": "major_outage",
-      "stage": "monitoring",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-11-11T20:48:12.260Z",
-      "updatedAt": "2026-11-11T21:07:26.449Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-11-11T21:24:46.513Z",
+      "resolvedAt": "2026-11-11T21:24:46.513Z",
       "url": "https://stspg.io/jdjlq5zjyl48"
+    },
+    {
+      "id": "probe:vskill-registry:1794432286513",
+      "serviceId": "vskill-registry",
+      "title": "Skill registry: Search: Slow response (14823 ms)",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "probe",
+      "startedAt": "2026-11-11T21:12:14.923Z",
+      "updatedAt": "2026-11-11T21:24:46.513Z",
+      "resolvedAt": null,
+      "url": null
     }
   ]
 }
