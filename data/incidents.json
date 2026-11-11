@@ -906,11 +906,11 @@
       "serviceId": "vskill-registry",
       "title": "Skill registry: Search: Slow response (13708 ms)",
       "level": "degraded",
-      "stage": "monitoring",
+      "stage": "resolved",
       "origin": "probe",
       "startedAt": "2026-11-11T19:06:34.871Z",
-      "updatedAt": "2026-11-11T20:07:52.360Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-11-11T20:16:11.694Z",
+      "resolvedAt": "2026-11-11T20:16:11.694Z",
       "url": null
     }
   ]
