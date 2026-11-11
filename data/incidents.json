@@ -837,7 +837,7 @@
       "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-11T07:26:25.558Z",
-      "updatedAt": "2026-11-11T08:10:20.435Z",
+      "updatedAt": "2026-11-11T08:25:58.513Z",
       "resolvedAt": null,
       "url": null
     },
@@ -846,10 +846,10 @@
       "serviceId": "cloudflare",
       "title": "SSL Certificate Provisioning Issue",
       "level": "degraded",
-      "stage": "investigating",
+      "stage": "identified",
       "origin": "upstream",
       "startedAt": "2026-11-11T07:45:42.146Z",
-      "updatedAt": "2026-11-11T07:45:57.602Z",
+      "updatedAt": "2026-11-11T08:17:36.507Z",
       "resolvedAt": null,
       "url": "https://www.cloudflarestatus.com/incidents/21vwp89eiyjx"
     }
