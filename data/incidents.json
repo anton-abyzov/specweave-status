@@ -858,10 +858,10 @@
       "serviceId": "vskill-registry",
       "title": "Skill registry: Search: Slow response (13680 ms)",
       "level": "degraded",
-      "stage": "monitoring",
+      "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-11T10:24:40.410Z",
-      "updatedAt": "2026-11-11T11:07:06.955Z",
+      "updatedAt": "2026-11-11T11:15:40.239Z",
       "resolvedAt": null,
       "url": null
     }
