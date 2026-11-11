@@ -894,10 +894,10 @@
       "serviceId": "vskill-registry",
       "title": "Skill registry: Search: Slow response (12706 ms)",
       "level": "degraded",
-      "stage": "monitoring",
+      "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-11T16:37:08.589Z",
-      "updatedAt": "2026-11-11T17:43:46.607Z",
+      "updatedAt": "2026-11-11T17:53:09.680Z",
       "resolvedAt": null,
       "url": null
     }
