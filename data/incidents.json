@@ -916,12 +916,12 @@
     {
       "id": "github:dvy0t3mvh1lg",
       "serviceId": "github",
-      "title": "Incident with Webhooks",
+      "title": "Impact across multiple GitHub products including Actions, Pages, and Copilot products.",
       "level": "major_outage",
-      "stage": "investigating",
+      "stage": "monitoring",
       "origin": "upstream",
       "startedAt": "2026-11-11T20:48:12.260Z",
-      "updatedAt": "2026-11-11T20:56:49.381Z",
+      "updatedAt": "2026-11-11T21:07:26.449Z",
       "resolvedAt": null,
       "url": "https://stspg.io/jdjlq5zjyl48"
     }
