@@ -834,10 +834,10 @@
       "serviceId": "vskill-registry",
       "title": "Skill registry: Search: Slow response (6643 ms)",
       "level": "major_outage",
-      "stage": "identified",
+      "stage": "monitoring",
       "origin": "probe",
       "startedAt": "2026-11-11T07:26:25.558Z",
-      "updatedAt": "2026-11-11T08:53:38.299Z",
+      "updatedAt": "2026-11-11T09:08:10.551Z",
       "resolvedAt": null,
       "url": null
     },
@@ -846,10 +846,10 @@
       "serviceId": "cloudflare",
       "title": "SSL Certificate Provisioning Issue",
       "level": "degraded",
-      "stage": "identified",
+      "stage": "monitoring",
       "origin": "upstream",
       "startedAt": "2026-11-11T07:45:42.146Z",
-      "updatedAt": "2026-11-11T08:17:36.507Z",
+      "updatedAt": "2026-11-11T09:01:59.510Z",
       "resolvedAt": null,
       "url": "https://www.cloudflarestatus.com/incidents/21vwp89eiyjx"
     }
