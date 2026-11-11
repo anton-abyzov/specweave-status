@@ -833,11 +833,11 @@
       "id": "probe:vskill-registry:1794382574040",
       "serviceId": "vskill-registry",
       "title": "Skill registry: Search: Slow response (6643 ms)",
-      "level": "degraded",
+      "level": "major_outage",
       "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-11T07:26:25.558Z",
-      "updatedAt": "2026-11-11T07:53:37.119Z",
+      "updatedAt": "2026-11-11T08:10:20.435Z",
       "resolvedAt": null,
       "url": null
     },
