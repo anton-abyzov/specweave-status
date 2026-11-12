@@ -1044,6 +1044,18 @@
       "updatedAt": "2026-11-12T18:34:20.062Z",
       "resolvedAt": null,
       "url": "https://stspg.io/m0rbx38nmy1c"
+    },
+    {
+      "id": "probe:vskill-registry:1794509579337",
+      "serviceId": "vskill-registry",
+      "title": "Skill registry: Search: Slow response (8844 ms)",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "probe",
+      "startedAt": "2026-11-12T18:43:03.293Z",
+      "updatedAt": "2026-11-12T18:52:59.337Z",
+      "resolvedAt": null,
+      "url": null
     }
   ]
 }
