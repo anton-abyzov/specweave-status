@@ -948,6 +948,18 @@
       "updatedAt": "2026-11-12T01:53:04.052Z",
       "resolvedAt": "2026-11-12T01:53:04.052Z",
       "url": null
+    },
+    {
+      "id": "cloudflare:8odt36zmvm36",
+      "serviceId": "cloudflare",
+      "title": "DNSSEC Configuration Change Issues",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-11-12T04:53:29.795Z",
+      "updatedAt": "2026-11-12T04:53:49.093Z",
+      "resolvedAt": null,
+      "url": "https://www.cloudflarestatus.com/incidents/8odt36zmvm36"
     }
   ]
 }
