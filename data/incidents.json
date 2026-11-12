@@ -1062,11 +1062,11 @@
       "serviceId": "github",
       "title": "Disruption with Email Delivery",
       "level": "degraded",
-      "stage": "monitoring",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-11-12T19:36:45.556Z",
-      "updatedAt": "2026-11-12T21:02:56.996Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-11-12T21:53:34.413Z",
+      "resolvedAt": "2026-11-12T21:53:34.413Z",
       "url": "https://stspg.io/lr8v4v8t7gs2"
     },
     {
