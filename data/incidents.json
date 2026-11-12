@@ -954,11 +954,11 @@
       "serviceId": "cloudflare",
       "title": "DNSSEC Configuration Change Issues",
       "level": "degraded",
-      "stage": "investigating",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-11-12T04:53:29.795Z",
-      "updatedAt": "2026-11-12T04:53:49.093Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-11-12T05:09:53.448Z",
+      "resolvedAt": "2026-11-12T05:09:53.448Z",
       "url": "https://www.cloudflarestatus.com/incidents/8odt36zmvm36"
     }
   ]
