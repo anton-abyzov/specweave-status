@@ -960,6 +960,18 @@
       "updatedAt": "2026-11-12T05:09:53.448Z",
       "resolvedAt": "2026-11-12T05:09:53.448Z",
       "url": "https://www.cloudflarestatus.com/incidents/8odt36zmvm36"
+    },
+    {
+      "id": "probe:vskill-registry:1794462819624",
+      "serviceId": "vskill-registry",
+      "title": "Skill registry: Search: Slow response (9203 ms)",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "probe",
+      "startedAt": "2026-11-12T05:45:03.373Z",
+      "updatedAt": "2026-11-12T05:53:39.624Z",
+      "resolvedAt": null,
+      "url": null
     }
   ]
 }
