@@ -1056,6 +1056,18 @@
       "updatedAt": "2026-11-12T19:14:30.454Z",
       "resolvedAt": "2026-11-12T19:14:30.454Z",
       "url": null
+    },
+    {
+      "id": "github:nwbjzl7nfrc2",
+      "serviceId": "github",
+      "title": "Disruption with Sign-in and Sign-up",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-11-12T19:36:45.556Z",
+      "updatedAt": "2026-11-12T19:43:01.975Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/lr8v4v8t7gs2"
     }
   ]
 }
