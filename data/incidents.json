@@ -977,11 +977,11 @@
       "id": "probe:vskill-registry:1794478616216",
       "serviceId": "vskill-registry",
       "title": "Skill registry: Search: Slow response (14941 ms)",
-      "level": "degraded",
-      "stage": "investigating",
+      "level": "major_outage",
+      "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-12T10:07:43.963Z",
-      "updatedAt": "2026-11-12T10:16:56.216Z",
+      "updatedAt": "2026-11-12T10:25:22.002Z",
       "resolvedAt": null,
       "url": null
     }
