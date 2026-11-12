@@ -1041,7 +1041,7 @@
       "stage": "identified",
       "origin": "upstream",
       "startedAt": "2026-11-12T17:52:44.926Z",
-      "updatedAt": "2026-11-12T20:28:28.216Z",
+      "updatedAt": "2026-11-12T21:18:24.193Z",
       "resolvedAt": null,
       "url": "https://stspg.io/m0rbx38nmy1c"
     },
@@ -1086,10 +1086,10 @@
       "serviceId": "vskill-registry",
       "title": "Skill registry: Search: Slow response (12030 ms)",
       "level": "degraded",
-      "stage": "investigating",
+      "stage": "monitoring",
       "origin": "probe",
       "startedAt": "2026-11-12T21:06:54.345Z",
-      "updatedAt": "2026-11-12T21:14:36.876Z",
+      "updatedAt": "2026-11-12T21:23:27.977Z",
       "resolvedAt": null,
       "url": null
     }
