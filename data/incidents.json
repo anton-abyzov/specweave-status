@@ -1122,10 +1122,10 @@
       "serviceId": "vskill-api",
       "title": "API: Skill listing: HTTP 500",
       "level": "major_outage",
-      "stage": "investigating",
+      "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-13T17:22:53.847Z",
-      "updatedAt": "2026-11-13T17:34:20.698Z",
+      "updatedAt": "2026-11-13T17:43:34.564Z",
       "resolvedAt": null,
       "url": null
     },
@@ -1134,10 +1134,10 @@
       "serviceId": "vskill-registry",
       "title": "Skill registry: Skill lookup: HTTP 500",
       "level": "major_outage",
-      "stage": "investigating",
+      "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-13T17:22:53.847Z",
-      "updatedAt": "2026-11-13T17:34:20.698Z",
+      "updatedAt": "2026-11-13T17:43:34.564Z",
       "resolvedAt": null,
       "url": null
     }
