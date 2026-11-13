@@ -1116,6 +1116,30 @@
       "updatedAt": "2026-11-13T15:43:04.204Z",
       "resolvedAt": "2026-11-13T15:43:04.204Z",
       "url": "https://stspg.io/264r547qtkky"
+    },
+    {
+      "id": "probe:vskill-api:1794591260698",
+      "serviceId": "vskill-api",
+      "title": "API: Skill listing: HTTP 500",
+      "level": "major_outage",
+      "stage": "investigating",
+      "origin": "probe",
+      "startedAt": "2026-11-13T17:22:53.847Z",
+      "updatedAt": "2026-11-13T17:34:20.698Z",
+      "resolvedAt": null,
+      "url": null
+    },
+    {
+      "id": "probe:vskill-registry:1794591260698",
+      "serviceId": "vskill-registry",
+      "title": "Skill registry: Skill lookup: HTTP 500",
+      "level": "major_outage",
+      "stage": "investigating",
+      "origin": "probe",
+      "startedAt": "2026-11-13T17:22:53.847Z",
+      "updatedAt": "2026-11-13T17:34:20.698Z",
+      "resolvedAt": null,
+      "url": null
     }
   ]
 }
