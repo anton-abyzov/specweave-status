@@ -1104,6 +1104,18 @@
       "updatedAt": "2026-11-13T12:10:56.213Z",
       "resolvedAt": "2026-11-13T12:10:56.213Z",
       "url": "https://stspg.io/6kqyd0c5b1gr"
+    },
+    {
+      "id": "claude:34wq7gxnxvvm",
+      "serviceId": "claude",
+      "title": "Elevated errors on claude.ai, the Claude API, and Claude Code",
+      "level": "partial_outage",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-11-13T13:09:50.189Z",
+      "updatedAt": "2026-11-13T13:09:50.345Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/264r547qtkky"
     }
   ]
 }
