@@ -1098,11 +1098,11 @@
       "serviceId": "claude",
       "title": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
       "level": "partial_outage",
-      "stage": "monitoring",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-11-13T09:58:58.049Z",
-      "updatedAt": "2026-11-13T11:05:23.683Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-11-13T12:10:56.213Z",
+      "resolvedAt": "2026-11-13T12:10:56.213Z",
       "url": "https://stspg.io/6kqyd0c5b1gr"
     }
   ]
