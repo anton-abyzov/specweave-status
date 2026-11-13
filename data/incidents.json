@@ -1038,11 +1038,11 @@
       "serviceId": "claude",
       "title": "Elevated errors affecting the Microsoft 365 connector",
       "level": "partial_outage",
-      "stage": "monitoring",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-11-12T17:52:44.926Z",
-      "updatedAt": "2026-11-13T15:40:53.645Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-11-13T21:53:12.029Z",
+      "resolvedAt": "2026-11-13T21:53:12.029Z",
       "url": "https://stspg.io/m0rbx38nmy1c"
     },
     {
@@ -1125,7 +1125,7 @@
       "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-13T17:22:53.847Z",
-      "updatedAt": "2026-11-13T21:43:12.635Z",
+      "updatedAt": "2026-11-13T21:53:12.029Z",
       "resolvedAt": null,
       "url": null
     },
@@ -1137,7 +1137,7 @@
       "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-13T17:22:53.847Z",
-      "updatedAt": "2026-11-13T21:43:12.635Z",
+      "updatedAt": "2026-11-13T21:53:12.029Z",
       "resolvedAt": null,
       "url": null
     }
