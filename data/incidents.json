@@ -1125,7 +1125,7 @@
       "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-13T17:22:53.847Z",
-      "updatedAt": "2026-11-14T04:17:56.139Z",
+      "updatedAt": "2026-11-14T04:26:10.530Z",
       "resolvedAt": null,
       "url": null
     },
@@ -1137,7 +1137,7 @@
       "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-13T17:22:53.847Z",
-      "updatedAt": "2026-11-14T04:17:56.139Z",
+      "updatedAt": "2026-11-14T04:26:10.530Z",
       "resolvedAt": null,
       "url": null
     },
@@ -1146,11 +1146,11 @@
       "serviceId": "claude",
       "title": "Elevated purchasing errors on claude.ai",
       "level": "partial_outage",
-      "stage": "monitoring",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-11-14T02:54:33.303Z",
-      "updatedAt": "2026-11-14T03:09:15.572Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-11-14T04:26:10.530Z",
+      "resolvedAt": "2026-11-14T04:26:10.530Z",
       "url": "https://stspg.io/qqf00d9r7pm4"
     }
   ]
