@@ -1125,7 +1125,7 @@
       "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-13T17:22:53.847Z",
-      "updatedAt": "2026-11-14T07:09:35.034Z",
+      "updatedAt": "2026-11-14T07:17:55.940Z",
       "resolvedAt": null,
       "url": null
     },
@@ -1137,7 +1137,7 @@
       "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-13T17:22:53.847Z",
-      "updatedAt": "2026-11-14T07:09:35.034Z",
+      "updatedAt": "2026-11-14T07:17:55.940Z",
       "resolvedAt": null,
       "url": null
     },
@@ -1161,9 +1161,21 @@
       "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-14T06:11:42.144Z",
-      "updatedAt": "2026-11-14T07:09:35.034Z",
+      "updatedAt": "2026-11-14T07:17:55.940Z",
       "resolvedAt": null,
       "url": null
+    },
+    {
+      "id": "claude:ct4c2pwf2xpj",
+      "serviceId": "claude",
+      "title": "Some users unable to sign up with Apple on the Claude iOS app",
+      "level": "partial_outage",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-11-14T07:11:36.111Z",
+      "updatedAt": "2026-11-14T07:11:36.220Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/4858wf40dx89"
     }
   ]
 }
