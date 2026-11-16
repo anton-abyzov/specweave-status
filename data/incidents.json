@@ -1161,7 +1161,7 @@
       "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-14T06:11:42.144Z",
-      "updatedAt": "2026-11-16T07:38:10.820Z",
+      "updatedAt": "2026-11-16T07:57:45.085Z",
       "resolvedAt": null,
       "url": null
     },
@@ -1176,6 +1176,18 @@
       "updatedAt": "2026-11-15T02:10:54.568Z",
       "resolvedAt": null,
       "url": "https://stspg.io/4858wf40dx89"
+    },
+    {
+      "id": "claude:r1b4f9bbnsx1",
+      "serviceId": "claude",
+      "title": "Elevated errors for Claude Sonnet 5.5 and Claude Fable 5.2",
+      "level": "partial_outage",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-11-16T07:49:55.052Z",
+      "updatedAt": "2026-11-16T07:49:55.388Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/n18qjkd7dt4q"
     }
   ]
 }
