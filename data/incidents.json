@@ -1161,7 +1161,7 @@
       "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-14T06:11:42.144Z",
-      "updatedAt": "2026-11-16T15:19:24.753Z",
+      "updatedAt": "2026-11-16T15:35:06.942Z",
       "resolvedAt": null,
       "url": null
     },
@@ -1200,6 +1200,18 @@
       "updatedAt": "2026-11-16T15:12:56.270Z",
       "resolvedAt": null,
       "url": "https://stspg.io/01qq3kzyyqzl"
+    },
+    {
+      "id": "github:2zfqmghmg3s3",
+      "serviceId": "github",
+      "title": "Incident with Pull Requests",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-11-16T11:59:40.892Z",
+      "updatedAt": "2026-11-16T15:33:14.652Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/ljtn69jlt087"
     }
   ]
 }
