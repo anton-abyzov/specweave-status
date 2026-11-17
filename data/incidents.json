@@ -1161,7 +1161,7 @@
       "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-14T06:11:42.144Z",
-      "updatedAt": "2026-11-17T21:43:29.950Z",
+      "updatedAt": "2026-11-17T21:53:21.917Z",
       "resolvedAt": null,
       "url": null
     },
@@ -1218,11 +1218,11 @@
       "serviceId": "claude",
       "title": "Some users unable to sign in with Apple on claude.ai and the Claude iOS app",
       "level": "partial_outage",
-      "stage": "identified",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-11-17T18:55:53.493Z",
-      "updatedAt": "2026-11-17T18:56:06.196Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-11-17T21:53:21.917Z",
+      "resolvedAt": "2026-11-17T21:53:21.917Z",
       "url": "https://stspg.io/3tl6h35nnzwm"
     }
   ]
