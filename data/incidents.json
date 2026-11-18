@@ -1161,7 +1161,7 @@
       "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-14T06:11:42.144Z",
-      "updatedAt": "2026-11-18T01:23:50.472Z",
+      "updatedAt": "2026-11-18T01:35:53.534Z",
       "resolvedAt": null,
       "url": null
     },
@@ -1193,11 +1193,11 @@
       "id": "claude:b5cq662qf2wm",
       "serviceId": "claude",
       "title": "Claude unable to join meetings",
-      "level": "partial_outage",
+      "level": "degraded",
       "stage": "identified",
       "origin": "upstream",
       "startedAt": "2026-11-16T15:10:15.160Z",
-      "updatedAt": "2026-11-17T23:39:43.921Z",
+      "updatedAt": "2026-11-18T01:29:51.981Z",
       "resolvedAt": null,
       "url": "https://stspg.io/01qq3kzyyqzl"
     },
