@@ -1161,7 +1161,7 @@
       "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-14T06:11:42.144Z",
-      "updatedAt": "2026-11-19T17:06:32.214Z",
+      "updatedAt": "2026-11-19T17:15:37.656Z",
       "resolvedAt": null,
       "url": null
     },
@@ -1248,6 +1248,18 @@
       "updatedAt": "2026-11-19T09:37:30.451Z",
       "resolvedAt": "2026-11-19T09:37:30.451Z",
       "url": "https://stspg.io/nlb5fptv28h5"
+    },
+    {
+      "id": "github:m310qbkfm3ww",
+      "serviceId": "github",
+      "title": "Disruption with some GitHub services",
+      "level": "degraded",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-11-19T17:06:26.800Z",
+      "updatedAt": "2026-11-19T17:06:27.042Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/pvjz2g01trc7"
     }
   ]
 }
