@@ -1161,7 +1161,7 @@
       "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-14T06:11:42.144Z",
-      "updatedAt": "2026-11-23T09:46:37.001Z",
+      "updatedAt": "2026-11-23T09:54:56.068Z",
       "resolvedAt": null,
       "url": null
     },
@@ -1260,6 +1260,18 @@
       "updatedAt": "2026-11-19T18:20:45.329Z",
       "resolvedAt": "2026-11-19T18:20:45.329Z",
       "url": "https://stspg.io/pvjz2g01trc7"
+    },
+    {
+      "id": "claude:yzs0s90d8fm8",
+      "serviceId": "claude",
+      "title": "Elevated errors for multiple models",
+      "level": "partial_outage",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-11-23T09:49:22.296Z",
+      "updatedAt": "2026-11-23T09:49:22.496Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/q2ptbwdjx31m"
     }
   ]
 }
