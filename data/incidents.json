@@ -1161,7 +1161,7 @@
       "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-14T06:11:42.144Z",
-      "updatedAt": "2026-11-24T17:16:24.018Z",
+      "updatedAt": "2026-11-24T17:24:55.894Z",
       "resolvedAt": null,
       "url": null
     },
@@ -1277,13 +1277,25 @@
       "id": "claude:3vbyqgnswwxq",
       "serviceId": "claude",
       "title": "Claude for Microsoft 365 add-in missing for some users",
-      "level": "degraded",
+      "level": "partial_outage",
       "stage": "investigating",
       "origin": "upstream",
       "startedAt": "2026-11-24T00:10:40.012Z",
-      "updatedAt": "2026-11-24T05:05:21.429Z",
+      "updatedAt": "2026-11-24T17:19:32.218Z",
       "resolvedAt": null,
       "url": "https://stspg.io/ffdq2qfv8frk"
+    },
+    {
+      "id": "claude:fbvlx4wx4zx5",
+      "serviceId": "claude",
+      "title": "Elevated errors for Claude Haiku 5.5",
+      "level": "partial_outage",
+      "stage": "investigating",
+      "origin": "upstream",
+      "startedAt": "2026-11-24T17:19:31.942Z",
+      "updatedAt": "2026-11-24T17:19:32.258Z",
+      "resolvedAt": null,
+      "url": "https://stspg.io/n7769lzz1dvy"
     }
   ]
 }
