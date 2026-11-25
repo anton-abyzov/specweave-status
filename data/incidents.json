@@ -1161,7 +1161,7 @@
       "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-14T06:11:42.144Z",
-      "updatedAt": "2026-11-25T01:13:38.169Z",
+      "updatedAt": "2026-11-25T01:24:38.619Z",
       "resolvedAt": null,
       "url": null
     },
@@ -1302,11 +1302,11 @@
       "serviceId": "github",
       "title": "Disruption with Code Completions and Next Edit Suggestions",
       "level": "major_outage",
-      "stage": "investigating",
+      "stage": "resolved",
       "origin": "upstream",
       "startedAt": "2026-11-25T00:08:17.965Z",
-      "updatedAt": "2026-11-25T01:05:35.847Z",
-      "resolvedAt": null,
+      "updatedAt": "2026-11-25T01:24:38.619Z",
+      "resolvedAt": "2026-11-25T01:24:38.619Z",
       "url": "https://stspg.io/bk5200jsb13k"
     }
   ]
