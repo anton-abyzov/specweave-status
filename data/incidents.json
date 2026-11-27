@@ -1161,7 +1161,7 @@
       "stage": "identified",
       "origin": "probe",
       "startedAt": "2026-11-14T06:11:42.144Z",
-      "updatedAt": "2026-11-27T10:35:32.599Z",
+      "updatedAt": "2026-11-27T10:43:22.576Z",
       "resolvedAt": null,
       "url": null
     },
@@ -1338,10 +1338,10 @@
       "serviceId": "claude",
       "title": "Degraded performance for Claude Fable 5.2",
       "level": "partial_outage",
-      "stage": "identified",
+      "stage": "monitoring",
       "origin": "upstream",
       "startedAt": "2026-11-27T10:34:01.796Z",
-      "updatedAt": "2026-11-27T10:34:49.319Z",
+      "updatedAt": "2026-11-27T10:40:12.587Z",
       "resolvedAt": null,
       "url": "https://stspg.io/n4l14k7m49zw"
     }
