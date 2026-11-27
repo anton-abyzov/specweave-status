@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-27T10:26:13.471Z",
+  "generatedAt": "2026-11-27T10:35:32.599Z",
   "level": "partial_outage",
   "services": [
     {
       "id": "connect",
       "name": "Connect relay",
       "level": "operational",
-      "detail": "Responding in 840 ms",
+      "detail": "Responding in 1105 ms",
       "components": [
         {
           "id": "relay",
           "name": "Relay",
           "level": "operational",
-          "detail": "Responding in 840 ms",
-          "ms": 840
+          "detail": "Responding in 1105 ms",
+          "ms": 1105
         }
       ]
     },
@@ -29,7 +29,7 @@
           "name": "Sign-in service",
           "level": "operational",
           "detail": "Google and Apple sign-in available",
-          "ms": 91
+          "ms": 140
         }
       ]
     },
@@ -43,22 +43,22 @@
           "id": "home",
           "name": "Home page",
           "level": "operational",
-          "detail": "Responding in 118 ms",
-          "ms": 118
+          "detail": "Responding in 206 ms",
+          "ms": 206
         },
         {
           "id": "docs",
           "name": "Documentation",
           "level": "operational",
-          "detail": "Responding in 132 ms",
-          "ms": 132
+          "detail": "Responding in 216 ms",
+          "ms": 216
         },
         {
           "id": "studio",
           "name": "SpecWithCode page",
           "level": "operational",
-          "detail": "Responding in 119 ms",
-          "ms": 119
+          "detail": "Responding in 216 ms",
+          "ms": 216
         }
       ]
     },
@@ -73,14 +73,14 @@
           "name": "Latest release",
           "level": "operational",
           "detail": "v1.0.452, published November 27, 2026",
-          "ms": 176
+          "ms": 321
         },
         {
           "id": "dmg",
           "name": "macOS installer (Apple silicon)",
           "level": "operational",
           "detail": "Download available",
-          "ms": 809
+          "ms": 1094
         }
       ]
     },
@@ -94,15 +94,15 @@
           "id": "mac-feed",
           "name": "macOS update feed",
           "level": "operational",
-          "detail": "Responding in 810 ms",
-          "ms": 810
+          "detail": "Responding in 1089 ms",
+          "ms": 1089
         },
         {
           "id": "service-feed",
           "name": "Service update manifest",
           "level": "operational",
           "detail": "Version 1.0.452",
-          "ms": 810
+          "ms": 1089
         }
       ]
     },
@@ -110,58 +110,58 @@
       "id": "vskill-platform",
       "name": "verified-skill.com",
       "level": "operational",
-      "detail": "Responding in 798 ms",
+      "detail": "Responding in 2835 ms",
       "components": [
         {
           "id": "home",
           "name": "Home page",
           "level": "operational",
-          "detail": "Responding in 798 ms",
-          "ms": 798
+          "detail": "Responding in 2835 ms",
+          "ms": 2835
         }
       ]
     },
     {
       "id": "vskill-api",
       "name": "API",
-      "level": "operational",
-      "detail": "All 2 checks passing",
+      "level": "degraded",
+      "detail": "Catalog stats: Slow response (6257 ms)",
       "components": [
         {
           "id": "skills",
           "name": "Skill listing",
           "level": "operational",
-          "detail": "Responding in 795 ms",
-          "ms": 795
+          "detail": "Responding in 2425 ms",
+          "ms": 2425
         },
         {
           "id": "stats",
           "name": "Catalog stats",
-          "level": "operational",
-          "detail": "Responding in 1330 ms",
-          "ms": 1330
+          "level": "degraded",
+          "detail": "Slow response (6257 ms)",
+          "ms": 6257
         }
       ]
     },
     {
       "id": "vskill-registry",
       "name": "Skill registry",
-      "level": "operational",
-      "detail": "All 2 checks passing",
+      "level": "degraded",
+      "detail": "Skill lookup: Slow response (6803 ms)",
       "components": [
         {
           "id": "lookup",
           "name": "Skill lookup",
-          "level": "operational",
-          "detail": "Responding in 794 ms",
-          "ms": 794
+          "level": "degraded",
+          "detail": "Slow response (6803 ms)",
+          "ms": 6803
         },
         {
           "id": "search",
           "name": "Search",
           "level": "operational",
-          "detail": "Responding in 1080 ms",
-          "ms": 1080
+          "detail": "Responding in 2687 ms",
+          "ms": 2687
         }
       ]
     },
@@ -176,7 +176,7 @@
           "name": "Workers",
           "level": "degraded",
           "detail": "2 of 3 running",
-          "ms": 791
+          "ms": 165
         }
       ]
     },
@@ -191,7 +191,7 @@
           "name": "Latest version published",
           "level": "operational",
           "detail": "specweave@3.2.5",
-          "ms": 793
+          "ms": 171
         }
       ]
     },
@@ -206,7 +206,7 @@
           "name": "Marketplace manifest",
           "level": "operational",
           "detail": "Version 3.2.5",
-          "ms": 107
+          "ms": 207
         }
       ]
     },
@@ -310,25 +310,25 @@
       "id": "claude",
       "name": "Claude",
       "level": "partial_outage",
-      "detail": "Claude for Microsoft 365 add-in missing for some users",
+      "detail": "Degraded performance for Claude Fable 5.2",
       "components": [
         {
           "id": "claude-ai",
           "name": "claude.ai",
-          "level": "degraded",
-          "detail": "degraded performance"
+          "level": "partial_outage",
+          "detail": "partial outage"
         },
         {
           "id": "claude-api-api-anthropic-com-",
           "name": "Claude API (api.anthropic.com)",
-          "level": "operational",
-          "detail": null
+          "level": "partial_outage",
+          "detail": "partial outage"
         },
         {
           "id": "claude-code",
           "name": "Claude Code",
-          "level": "operational",
-          "detail": null
+          "level": "partial_outage",
+          "detail": "partial outage"
         }
       ]
     },
